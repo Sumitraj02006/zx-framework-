@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy | Zoryvex Studio</title>
+  
+  <!-- SEO Metadata -->
+  <meta name="description" content="Your privacy matters to us. Learn how Zoryvex Studio collects, uses, stores, and protects your information securely and transparently.">
+  <meta name="author" content="Zoryvex Studio">
+  
+  <!-- Icons & Fonts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="dark-theme">
+
+  <!-- Scroll Progress Indicator -->
+  <div id="scroll-progress-bar" style="position: fixed; top: 0; left: 0; height: 4px; background: linear-gradient(90deg, var(--primary), var(--accent)); width: 0%; z-index: 1000; transition: width 0.1s ease;"></div>
+
+  <!-- ==========================================
+       PAGE LOADER
+       ========================================== -->
+  <div id="page-loader">
+    <div class="loader-spinner"></div>
+  </div>
+
+  <!-- ==========================================
+       HEADER & NAVIGATION
+       ========================================== -->
+  <header>
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="Zoryvex Studio Logo" class="logo-icon-img">
+        Zoryvex Studio
+      </a>
+      
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="process.html">Process</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li class="mobile-only-cta"><a href="contact.html" class="btn btn-primary">Get Free Quote</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-right">
+        <!-- Theme Toggle -->
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+          <i class="fas fa-sun sun-icon"></i>
+          <i class="fas fa-moon moon-icon"></i>
+        </button>
+
+        <!-- CTA Header Button -->
+        <a href="contact.html" class="btn btn-primary btn-sm">Get Free Quote</a>
+      </div>
+
+      <!-- Mobile Menu Toggle Button -->
+      <button id="mobile-menu-toggle" class="mobile-toggle" aria-label="Toggle Navigation Menu">
+        <span class="mobile-toggle-line"></span>
+        <span class="mobile-toggle-line"></span>
+        <span class="mobile-toggle-line"></span>
+      </button>
+    </div>
+  </header>
+
+  <main style="padding-top: 100px;">
+    
+    <!-- ==========================================
+         PRIVACY POLICY HERO
+         ========================================== -->
+    <section class="privacy-hero" style="background: var(--bg-secondary); padding: 60px 0; border-bottom: 1px solid var(--border-color);">
+      <div class="container" style="display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 40px; align-items: center;">
+        <div>
+          <span class="badge">Legal Document</span>
+          <h1 style="font-size: 3rem; margin-top: 12px; margin-bottom: 16px;">Privacy Policy</h1>
+          <p style="font-size: 1.1rem; line-height: 1.6; color: var(--text-secondary); margin-bottom: 24px;">
+            Your privacy matters to us. This Privacy Policy explains how Zoryvex Studio collects, uses, stores, and protects your information when you use our website or services.
+          </p>
+          <div style="display: flex; gap: 24px; flex-wrap: wrap; margin-bottom: 24px; font-size: 0.9rem; color: var(--text-tertiary);">
+            <div><i class="far fa-calendar-alt" style="margin-right: 6px; color: var(--primary);"></i> <strong>Effective Date:</strong> <span class="dynamic-date"></span></div>
+            <div><i class="far fa-clock" style="margin-right: 6px; color: var(--primary);"></i> <strong>Last Updated:</strong> <span class="dynamic-date"></span></div>
+          </div>
+          <!-- Trust Badges -->
+          <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+            <span class="badge" style="background: rgba(34,197,94,0.1); color: #22c55e; border: 1px solid rgba(34,197,94,0.2);"><i class="fas fa-shield-alt"></i> Secure Website</span>
+            <span class="badge" style="background: rgba(59,130,246,0.1); color: #3b82f6; border: 1px solid rgba(59,130,246,0.2);"><i class="fas fa-lock"></i> SSL Protected</span>
+            <span class="badge" style="background: rgba(168,85,247,0.1); color: #a855f7; border: 1px solid rgba(168,85,247,0.2);"><i class="fas fa-eye"></i> Transparent Data</span>
+            <span class="badge" style="background: rgba(234,179,8,0.1); color: #eab308; border: 1px solid rgba(234,179,8,0.2);"><i class="fas fa-file-contract"></i> No Hidden Policies</span>
+          </div>
+        </div>
+        <div style="display: flex; justify-content: center;">
+          <img src="images/privacy-illustration.png" alt="Zoryvex Studio Data Security & Privacy Illustration" style="max-width: 100%; height: auto; max-height: 280px; border-radius: var(--radius-lg); box-shadow: var(--shadow-lg);">
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         TOOLBAR & SEARCH CONTAINER
+         ========================================== -->
+    <section style="background: var(--bg-primary); padding: 20px 0; position: sticky; top: 80px; z-index: 100; border-bottom: 1px solid var(--border-color); backdrop-filter: blur(12px); background: rgba(var(--bg-primary-rgb), 0.85);">
+      <div class="container" style="display: flex; justify-content: space-between; align-items: center; gap: 20px; flex-wrap: wrap;">
+        <div style="position: relative; width: 320px; max-width: 100%;">
+          <input type="text" id="policy-search" placeholder="Search privacy policy..." style="width: 100%; padding: 10px 16px 10px 40px; border-radius: var(--radius-sm); border: 1px solid var(--border-color); background: var(--bg-secondary); color: var(--text-primary); outline: none;">
+          <i class="fas fa-search" style="position: absolute; left: 16px; top: 50%; transform: translateY(-50%); color: var(--text-tertiary);"></i>
+        </div>
+        <div style="display: flex; gap: 12px;">
+          <button id="btn-print-policy" class="btn btn-secondary btn-sm"><i class="fas fa-print"></i> Print Policy</button>
+          <button id="btn-download-pdf" class="btn btn-primary btn-sm"><i class="fas fa-file-pdf"></i> Download PDF</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         PRIVACY POLICY CONTENT
+         ========================================== -->
+    <section style="padding: 60px 0; background: var(--bg-primary);">
+      <div class="container" style="display: grid; grid-template-columns: 280px 1fr; gap: 50px;">
+        
+        <!-- Sidebar Navigation (Sticky Table of Contents) -->
+        <aside class="privacy-sidebar" style="position: sticky; top: 160px; height: fit-content; max-height: calc(100vh - 180px); overflow-y: auto; padding-right: 15px;">
+          <h4 style="font-family: var(--font-heading); margin-bottom: 20px; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px; color: var(--text-primary);">Table of Contents</h4>
+          <ul id="policy-toc" style="list-style: none; display: flex; flex-direction: column; gap: 12px; font-size: 0.95rem;">
+            <li><a href="#intro" class="toc-link active">1. Introduction</a></li>
+            <li><a href="#info-collect" class="toc-link">2. Information We Collect</a></li>
+            <li><a href="#info-use" class="toc-link">3. How We Use Information</a></li>
+            <li><a href="#cookies" class="toc-link">4. Cookies Policy</a></li>
+            <li><a href="#security" class="toc-link">5. Data Security</a></li>
+            <li><a href="#third-party" class="toc-link">6. Third-Party Services</a></li>
+            <li><a href="#data-sharing" class="toc-link">7. Data Sharing</a></li>
+            <li><a href="#data-retention" class="toc-link">8. Data Retention</a></li>
+            <li><a href="#your-rights" class="toc-link">9. Your Rights</a></li>
+            <li><a href="#children" class="toc-link">10. Children's Privacy</a></li>
+            <li><a href="#external-links" class="toc-link">11. External Links</a></li>
+            <li><a href="#changes" class="toc-link">12. Changes to This Policy</a></li>
+            <li><a href="#contact-us" class="toc-link">13. Contact Us</a></li>
+          </ul>
+        </aside>
+
+        <!-- Policy Document Details -->
+        <div class="privacy-document-body" style="line-height: 1.7; color: var(--text-secondary);">
+          
+          <!-- Section 1: Introduction -->
+          <article id="intro" class="policy-section" style="margin-bottom: 50px; scroll-margin-top: 160px;">
+            <h2 style="font-size: 1.8rem; margin-bottom: 20px; color: var(--text-primary); border-left: 4px solid var(--primary); padding-left: 15px;">1. Introduction</h2>
+            <p style="margin-bottom: 16px;">
+              At <strong>Zoryvex Studio</strong>, we respect your privacy and are committed to protecting your personal information. We believe in transparency and want to keep our policies straightforward, understandable, and honest.
+            </p>
+            <p>
+              By accessing our website or using our digital solutions, you agree to the collection, storage, and practices outlined in this Privacy Policy. If you do not agree with any terms, please discontinue use of our site and services.
+            </p>
+          </article>
+
+          <!-- Section 2: Information We Collect -->
+          <article id="info-collect" class="policy-section" style="margin-bottom: 50px; scroll-margin-top: 160px;">
+            <h2 style="font-size: 1.8rem; margin-bottom: 20px; color: var(--text-primary); border-left: 4px solid var(--primary); padding-left: 15px;">2. Information We Collect</h2>
+            <p style="margin-bottom: 24px;">
+              We collect information that helps us communicate with you, provide accurate estimations, and deliver premium web services.
+            </p>
+            
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 24px;" class="info-collect-grid">
+              <!-- Personal Info Card -->
+              <div class="glass-card" style="padding: 24px; border-radius: var(--radius-md);">
+                <div style="width: 48px; height: 48px; background: rgba(37,99,235,0.1); color: var(--primary); display: flex; align-items: center; justify-content: center; border-radius: var(--radius-sm); font-size: 1.3rem; margin-bottom: 16px;">
+                  <i class="fas fa-id-card"></i>
+                </div>
+                <h3 style="font-size: 1.25rem; margin-bottom: 12px; color: var(--text-primary);">Personal Information</h3>
+                <ul style="list-style: none; display: flex; flex-direction: column; gap: 10px; font-size: 0.95rem;">
+                  <li><i class="fas fa-check" style="color: var(--accent); margin-right: 8px;"></i> Full Name</li>
+                  <li><i class="fas fa-check" style="color: var(--accent); margin-right: 8px;"></i> Email Address</li>
+                  <li><i class="fas fa-check" style="color: var(--accent); margin-right: 8px;"></i> Phone Number</li>
+                  <li><i class="fas fa-check" style="color: var(--accent); margin-right: 8px;"></i> Company/Business Name</li>
+                  <li><i class="fas fa-check" style="color: var(--accent); margin-right: 8px;"></i> Detailed Project Requirements</li>
+                  <li><i class="fas fa-check" style="color: var(--accent); margin-right: 8px;"></i> Estimated Project Budget</li>
+                </ul>
+              </div>
+              
+              <!-- Technical Info Card -->
+              <div class="glass-card" style="padding: 24px; border-radius: var(--radius-md);">
+                <div style="width: 48px; height: 48px; background: rgba(168,85,247,0.1); color: #a855f7; display: flex; align-items: center; justify-content: center; border-radius: var(--radius-sm); font-size: 1.3rem; margin-bottom: 16px;">
+                  <i class="fas fa-laptop-code"></i>
+                </div>
+                <h3 style="font-size: 1.25rem; margin-bottom: 12px; color: var(--text-primary);">Technical & Usage Data</h3>
+                <ul style="list-style: none; display: flex; flex-direction: column; gap: 10px; font-size: 0.95rem;">
+                  <li><i class="fas fa-check" style="color: var(--accent); margin-right: 8px;"></i> IP Address</li>
+                  <li><i class="fas fa-check" style="color: var(--accent); margin-right: 8px;"></i> Browser Type & Version</li>
+                  <li><i class="fas fa-check" style="color: var(--accent); margin-right: 8px;"></i> Device Info & Screen Size</li>
+                  <li><i class="fas fa-check" style="color: var(--accent); margin-right: 8px;"></i> Operating System</li>
+                  <li><i class="fas fa-check" style="color: var(--accent); margin-right: 8px;"></i> Session Durations & Visited Pages</li>
+                  <li><i class="fas fa-check" style="color: var(--accent); margin-right: 8px;"></i> Essential Cookies & Analytics Data</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <!-- Section 3: How We Use Your Information -->
+          <article id="info-use" class="policy-section" style="margin-bottom: 50px; scroll-margin-top: 160px;">
+            <h2 style="font-size: 1.8rem; margin-bottom: 20px; color: var(--text-primary); border-left: 4px solid var(--primary); padding-left: 15px;">3. How We Use Your Information</h2>
+            <p style="margin-bottom: 24px;">
+              Your information is never wasted on spam. Zoryvex Studio utilizes the collected details strictly for business operations and customer satisfaction:
+            </p>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 16px;" class="info-use-grid">
+              <div class="glass-card" style="padding: 16px; border-radius: var(--radius-sm); font-size: 0.9rem;">
+                <h4 style="color: var(--text-primary); margin-bottom: 8px;"><i class="fas fa-reply" style="color: var(--primary); margin-right: 8px;"></i> Inquiry Responses</h4>
+                <p>Replying to your project forms and scheduling calls.</p>
+              </div>
+              <div class="glass-card" style="padding: 16px; border-radius: var(--radius-sm); font-size: 0.9rem;">
+                <h4 style="color: var(--text-primary); margin-bottom: 8px;"><i class="fas fa-file-invoice-dollar" style="color: var(--primary); margin-right: 8px;"></i> Project Quotations</h4>
+                <p>Generating custom proposal estimates and contracts.</p>
+              </div>
+              <div class="glass-card" style="padding: 16px; border-radius: var(--radius-sm); font-size: 0.9rem;">
+                <h4 style="color: var(--text-primary); margin-bottom: 8px;"><i class="fas fa-code" style="color: var(--primary); margin-right: 8px;"></i> Service Delivery</h4>
+                <p>Building, coding, and configuring your web layout platforms.</p>
+              </div>
+              <div class="glass-card" style="padding: 16px; border-radius: var(--radius-sm); font-size: 0.9rem;">
+                <h4 style="color: var(--text-primary); margin-bottom: 8px;"><i class="fas fa-tachometer-alt" style="color: var(--primary); margin-right: 8px;"></i> Speed & Performance</h4>
+                <p>Improving navigation speeds and solving page bugs.</p>
+              </div>
+              <div class="glass-card" style="padding: 16px; border-radius: var(--radius-sm); font-size: 0.9rem;">
+                <h4 style="color: var(--text-primary); margin-bottom: 8px;"><i class="fas fa-smile" style="color: var(--primary); margin-right: 8px;"></i> User Experience</h4>
+                <p>Tailoring website animations and loading parameters.</p>
+              </div>
+              <div class="glass-card" style="padding: 16px; border-radius: var(--radius-sm); font-size: 0.9rem;">
+                <h4 style="color: var(--text-primary); margin-bottom: 8px;"><i class="fas fa-bell" style="color: var(--primary); margin-right: 8px;"></i> Project Updates</h4>
+                <p>Sending milestone confirmations and deployment links.</p>
+              </div>
+              <div class="glass-card" style="padding: 16px; border-radius: var(--radius-sm); font-size: 0.9rem;">
+                <h4 style="color: var(--text-primary); margin-bottom: 8px;"><i class="fas fa-headset" style="color: var(--primary); margin-right: 8px;"></i> Customer Support</h4>
+                <p>Assisting you during the post-launch site maintenance periods.</p>
+              </div>
+              <div class="glass-card" style="padding: 16px; border-radius: var(--radius-sm); font-size: 0.9rem;">
+                <h4 style="color: var(--text-primary); margin-bottom: 8px;"><i class="fas fa-shield-alt" style="color: var(--primary); margin-right: 8px;"></i> Fraud Prevention</h4>
+                <p>Monitoring servers to block malicious hacking activities.</p>
+              </div>
+            </div>
+            <p style="margin-top: 20px; font-size: 0.9rem; color: var(--text-tertiary);">
+              * We only send marketing newsletters if you explicitly opt-in. You can unsubscribe at any single click.
+            </p>
+          </article>
+
+          <!-- Section 4: Cookies Policy -->
+          <article id="cookies" class="policy-section" style="margin-bottom: 50px; scroll-margin-top: 160px;">
+            <h2 style="font-size: 1.8rem; margin-bottom: 20px; color: var(--text-primary); border-left: 4px solid var(--primary); padding-left: 15px;">4. Cookies Policy</h2>
+            <p style="margin-bottom: 16px;">
+              Cookies are tiny data files saved in your browser that help us recognize you when you return. Zoryvex Studio uses cookies exclusively to:
+            </p>
+            <ul style="list-style-type: square; margin-left: 20px; margin-bottom: 20px; display: flex; flex-direction: column; gap: 8px;">
+              <li>Deliver a faster browsing speed using cached data sheets.</li>
+              <li>Track anonymized statistics on page navigation (using Google Analytics).</li>
+              <li>Remember website theme settings (Light vs Dark mode preferences).</li>
+              <li>Protect website authentication session codes.</li>
+            </ul>
+            <button id="btn-cookie-preferences" class="btn btn-secondary"><i class="fas fa-cog"></i> Manage Cookie Preferences</button>
+          </article>
+
+          <!-- Section 5: Data Security -->
+          <article id="security" class="policy-section" style="margin-bottom: 50px; scroll-margin-top: 160px;">
+            <h2 style="font-size: 1.8rem; margin-bottom: 20px; color: var(--text-primary); border-left: 4px solid var(--primary); padding-left: 15px;">5. Data Security</h2>
+            <p style="margin-bottom: 24px;">
+              We deploy industrial-grade protocols to lock down client personal information. Your records are safeguarded using:
+            </p>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px;">
+              <div class="glass-card" style="padding: 20px; text-align: center; border-radius: var(--radius-sm);">
+                <i class="fas fa-lock" style="font-size: 2rem; color: var(--primary); margin-bottom: 12px;"></i>
+                <h4 style="color: var(--text-primary); margin-bottom: 6px;">SSL Encryption</h4>
+                <p style="font-size: 0.8rem;">Forces HTTPS data transfers securely.</p>
+              </div>
+              <div class="glass-card" style="padding: 20px; text-align: center; border-radius: var(--radius-sm);">
+                <i class="fas fa-server" style="font-size: 2rem; color: var(--primary); margin-bottom: 12px;"></i>
+                <h4 style="color: var(--text-primary); margin-bottom: 6px;">Secure Servers</h4>
+                <p style="font-size: 0.8rem;">Firewalled cloud servers blocking breaches.</p>
+              </div>
+              <div class="glass-card" style="padding: 20px; text-align: center; border-radius: var(--radius-sm);">
+                <i class="fas fa-user-shield" style="font-size: 2rem; color: var(--primary); margin-bottom: 12px;"></i>
+                <h4 style="color: var(--text-primary); margin-bottom: 6px;">Limited Access</h4>
+                <p style="font-size: 0.8rem;">Only authorized site developers can see data.</p>
+              </div>
+              <div class="glass-card" style="padding: 20px; text-align: center; border-radius: var(--radius-sm);">
+                <i class="fas fa-database" style="font-size: 2rem; color: var(--primary); margin-bottom: 12px;"></i>
+                <h4 style="color: var(--text-primary); margin-bottom: 6px;">Regular Backups</h4>
+                <p style="font-size: 0.8rem;">Weekly database offsite backup loops.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Section 6: Third-Party Services -->
+          <article id="third-party" class="policy-section" style="margin-bottom: 50px; scroll-margin-top: 160px;">
+            <h2 style="font-size: 1.8rem; margin-bottom: 20px; color: var(--text-primary); border-left: 4px solid var(--primary); padding-left: 15px;">6. Third-Party Services</h2>
+            <p style="margin-bottom: 16px;">
+              To make our website interactive and execute payment agreements, we link to trusted third-party cloud architectures. These include:
+            </p>
+            <div style="display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 16px;">
+              <span class="badge" style="background: var(--bg-secondary); border: 1px solid var(--border-color);"><i class="fab fa-google"></i> Google Analytics & Maps</span>
+              <span class="badge" style="background: var(--bg-secondary); border: 1px solid var(--border-color);"><i class="fab fa-cloudflare"></i> Cloudflare CDN</span>
+              <span class="badge" style="background: var(--bg-secondary); border: 1px solid var(--border-color);"><i class="fas fa-credit-card"></i> Razorpay & PayPal</span>
+              <span class="badge" style="background: var(--bg-secondary); border: 1px solid var(--border-color);"><i class="fab fa-whatsapp"></i> WhatsApp Chat</span>
+              <span class="badge" style="background: var(--bg-secondary); border: 1px solid var(--border-color);"><i class="fas fa-envelope"></i> Gmail (Google Workspace)</span>
+            </div>
+            <p style="font-size: 0.9rem; color: var(--text-tertiary);">
+              ⚠️ <strong>Please Note:</strong> Each external provider maintains its own independent privacy policy rules. We encourage checking their privacy documentation directly.
+            </p>
+          </article>
+
+          <!-- Section 7: Data Sharing -->
+          <article id="data-sharing" class="policy-section" style="margin-bottom: 50px; scroll-margin-top: 160px;">
+            <h2 style="font-size: 1.8rem; margin-bottom: 20px; color: var(--text-primary); border-left: 4px solid var(--primary); padding-left: 15px;">7. Data Sharing</h2>
+            <div class="glass-card" style="padding: 24px; border-left: 4px solid var(--accent); border-radius: var(--radius-md); background: rgba(var(--accent-rgb), 0.02); margin-bottom: 16px;">
+              <p style="font-weight: 600; color: var(--text-primary); margin-bottom: 8px;">
+                🛑 Our Zero-Selling Promise:
+              </p>
+              <p>
+                Zoryvex Studio will <strong>NEVER sell, trade, or rent</strong> your personal information, email records, or phone registers to marketing brokers or third-party database sellers.
+              </p>
+            </div>
+            <p style="margin-bottom: 12px;">
+              Information is only shared under these strict circumstances:
+            </p>
+            <ul style="list-style-type: decimal; margin-left: 20px; display: flex; flex-direction: column; gap: 8px;">
+              <li><strong>Legal Compliance:</strong> When required by Indian authorities under legal warrants.</li>
+              <li><strong>Service Providers:</strong> With hosting nodes or UPI gateway APIs to complete active project tasks.</li>
+              <li><strong>Explicit Consent:</strong> Whenever you instruct us to transfer data elsewhere.</li>
+            </ul>
+          </article>
+
+          <!-- Section 8: Data Retention -->
+          <article id="data-retention" class="policy-section" style="margin-bottom: 50px; scroll-margin-top: 160px;">
+            <h2 style="font-size: 1.8rem; margin-bottom: 20px; color: var(--text-primary); border-left: 4px solid var(--primary); padding-left: 15px;">8. Data Retention</h2>
+            <p>
+              We retain personal data files only as long as necessary to complete your website design projects, provide active maintenance support, comply with tax guidelines, resolve contract disputes, and guarantee ongoing secure customer backup records.
+            </p>
+          </article>
+
+          <!-- Section 9: Your Rights -->
+          <article id="your-rights" class="policy-section" style="margin-bottom: 50px; scroll-margin-top: 160px;">
+            <h2 style="font-size: 1.8rem; margin-bottom: 20px; color: var(--text-primary); border-left: 4px solid var(--primary); padding-left: 15px;">9. Your Rights</h2>
+            <p style="margin-bottom: 16px;">
+              You own your information. Under data protection policies, you have complete authority to:
+            </p>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 24px;" class="rights-grid">
+              <div style="padding: 16px; background: var(--bg-secondary); border-radius: var(--radius-sm);">
+                <h4 style="color: var(--text-primary); margin-bottom: 6px;"><i class="fas fa-file-download" style="color: var(--accent); margin-right: 8px;"></i> Access & Copy</h4>
+                <p style="font-size: 0.85rem;">Request a complete export sheet of all personal records we store.</p>
+              </div>
+              <div style="padding: 16px; background: var(--bg-secondary); border-radius: var(--radius-sm);">
+                <h4 style="color: var(--text-primary); margin-bottom: 6px;"><i class="fas fa-edit" style="color: var(--accent); margin-right: 8px;"></i> Correct & Update</h4>
+                <p style="font-size: 0.85rem;">Change outdated names, phone numbers, or corporate emails.</p>
+              </div>
+              <div style="padding: 16px; background: var(--bg-secondary); border-radius: var(--radius-sm);">
+                <h4 style="color: var(--text-primary); margin-bottom: 6px;"><i class="fas fa-trash-alt" style="color: var(--accent); margin-right: 8px;"></i> Request Deletion</h4>
+                <p style="font-size: 0.85rem;">Instruct us to erase all details from our backup databases.</p>
+              </div>
+              <div style="padding: 16px; background: var(--bg-secondary); border-radius: var(--radius-sm);">
+                <h4 style="color: var(--text-primary); margin-bottom: 6px;"><i class="fas fa-ban" style="color: var(--accent); margin-right: 8px;"></i> Withdraw Consent</h4>
+                <p style="font-size: 0.85rem;">Cancel cookie setups or opt-out of notifications at any time.</p>
+              </div>
+            </div>
+            
+            <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+              <button id="btn-request-data" class="btn btn-primary"><i class="fas fa-download"></i> Request My Data</button>
+              <button id="btn-delete-data" class="btn btn-secondary" style="border-color: #ef4444; color: #ef4444;"><i class="fas fa-trash-alt"></i> Delete My Data</button>
+            </div>
+          </article>
+
+          <!-- Section 10: Children's Privacy -->
+          <article id="children" class="policy-section" style="margin-bottom: 50px; scroll-margin-top: 160px;">
+            <h2 style="font-size: 1.8rem; margin-bottom: 20px; color: var(--text-primary); border-left: 4px solid var(--primary); padding-left: 15px;">10. Children's Privacy</h2>
+            <p>
+              Our web design and digital systems are designed exclusively for business clients, startups, and adult freelancers. We do not knowingly collect or target any information from children under 13 years of age. If you suspect a minor has submitted personal files, contact us immediately to erase the records.
+            </p>
+          </article>
+
+          <!-- Section 11: External Links -->
+          <article id="external-links" class="policy-section" style="margin-bottom: 50px; scroll-margin-top: 160px;">
+            <h2 style="font-size: 1.8rem; margin-bottom: 20px; color: var(--text-primary); border-left: 4px solid var(--primary); padding-left: 15px;">11. External Links</h2>
+            <p>
+              Our website articles or portfolio cards might contain redirect links to external sites (client blogs, third-party software tools, payment gateways). Zoryvex Studio does not control or assume responsibility for the layout, security, or privacy structures of external platforms.
+            </p>
+          </article>
+
+          <!-- Section 12: Changes to This Policy -->
+          <article id="changes" class="policy-section" style="margin-bottom: 50px; scroll-margin-top: 160px;">
+            <h2 style="font-size: 1.8rem; margin-bottom: 20px; color: var(--text-primary); border-left: 4px solid var(--primary); padding-left: 15px;">12. Changes to This Policy</h2>
+            <p>
+              Zoryvex Studio updates this Privacy Policy document periodically as technology and legal codes change. We will indicate modifications by shifting the "Last Updated" date at the top. We encourage visiting this section regularly to stay informed.
+            </p>
+          </article>
+
+          <!-- Section 13: Contact Us -->
+          <article id="contact-us" class="policy-section" style="margin-bottom: 50px; scroll-margin-top: 160px;">
+            <h2 style="font-size: 1.8rem; margin-bottom: 20px; color: var(--text-primary); border-left: 4px solid var(--primary); padding-left: 15px;">13. Contact Us</h2>
+            <p style="margin-bottom: 20px;">
+              For any questions, query updates, data erasure tickets, or policy details, reach out to our team:
+            </p>
+            
+            <!-- Professional Contact Card -->
+            <div class="glass-card contact-card-grid" style="padding: 32px; border-radius: var(--radius-md); display: grid; grid-template-columns: 1fr 1fr; gap: 24px;">
+              <div>
+                <h3 style="font-size: 1.4rem; color: var(--primary); margin-bottom: 16px;">Zoryvex Studio</h3>
+                <ul style="list-style: none; display: flex; flex-direction: column; gap: 12px; font-size: 0.95rem;">
+                  <li><i class="fas fa-envelope" style="color: var(--accent); margin-right: 10px; width: 16px;"></i> <a href="mailto:contact@zoryvex.com" style="color: var(--text-primary);">contact@zoryvex.com</a></li>
+                  <li><i class="fas fa-phone" style="color: var(--accent); margin-right: 10px; width: 16px;"></i> +91-98765 43210</li>
+                  <li><i class="fas fa-globe" style="color: var(--accent); margin-right: 10px; width: 16px;"></i> <a href="index.html" style="color: var(--text-primary);">www.zoryvex.com</a></li>
+                </ul>
+              </div>
+              <div>
+                <h4 style="color: var(--text-primary); margin-bottom: 12px;">Office & Support Hours</h4>
+                <p style="font-size: 0.95rem; margin-bottom: 12px;">
+                  <i class="fas fa-map-marker-alt" style="color: var(--accent); margin-right: 6px;"></i> Sector 62, Noida, Uttar Pradesh, India
+                </p>
+                <p style="font-size: 0.9rem; color: var(--text-tertiary);">
+                  <i class="far fa-clock" style="color: var(--accent); margin-right: 6px;"></i> Monday – Saturday<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10:00 AM – 7:00 PM (IST)
+                </p>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         HIGHLIGHTED BOTTOM NOTICE
+         ========================================== -->
+    <section style="background: var(--bg-secondary); padding: 40px 0; text-align: center; border-top: 1px solid var(--border-color);">
+      <div class="container" style="max-width: 800px;">
+        <i class="fas fa-shield-halved" style="font-size: 2.5rem; color: var(--primary); margin-bottom: 16px;"></i>
+        <h3 style="font-size: 1.3rem; line-height: 1.6; font-weight: 600; color: var(--text-primary);">
+          Your trust is important to us. Zoryvex Studio is committed to protecting your privacy and handling your information responsibly, securely, and transparently.
+        </h3>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <img src="images/logo.png" alt="Zoryvex Studio Logo" class="logo-icon-img">
+          Zoryvex Studio
+        </a>
+        <p>Providing premium, simple, and high-converting websites for startups, creators, and local businesses worldwide. Build. Launch. Grow.</p>
+      </div>
+
+      <div class="footer-links-col">
+        <h4>Services Offered</h4>
+        <ul>
+          <li><a href="services.html">Website Development</a></li>
+          <li><a href="services.html">Website Redesign</a></li>
+          <li><a href="services.html">Performance Speedup</a></li>
+          <li><a href="services.html">Weekly Site Care</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links-col">
+        <h4>Legal Documents</h4>
+        <ul>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms & Conditions</a></li>
+          <li><a href="refund.html">Refund Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-newsletter">
+        <h4>Stay Updated</h4>
+        <p>Subscribe to our newsletter for simple online sales tips and search updates.</p>
+        <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed successfully!'); this.reset();">
+          <input type="email" placeholder="Your email address" required aria-label="Newsletter email input">
+          <button type="submit" class="btn btn-primary btn-sm"><i class="fas fa-envelope"></i></button>
+        </form>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© 2026 Zoryvex Studio. All Rights Reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================
+       FLOATING WHATSAPP BUTTON
+       ========================================== -->
+  <a href="https://wa.me/15559028822" class="floating-whatsapp" target="_blank" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- ==========================================
+       BACK TO TOP BUTTON
+       ========================================== -->
+  <button id="back-to-top" aria-label="Back To Top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- ==========================================
+       COOKIE PREFERENCES MODAL
+       ========================================== -->
+  <div id="cookie-pref-modal" class="modal" aria-hidden="true" role="dialog">
+    <div class="modal-content" style="max-width: 500px;">
+      <div class="modal-header">
+        <h3>Manage Cookie Preferences</h3>
+        <span class="close-modal" id="close-cookie-modal">&times;</span>
+      </div>
+      <div class="modal-body" style="display: flex; flex-direction: column; gap: 16px;">
+        <p>Customize how we use cookies. Necessary cookies are essential for the website to load.</p>
+        
+        <div style="display: flex; justify-content: space-between; align-items: center; padding: 12px; background: var(--bg-secondary); border-radius: var(--radius-sm);">
+          <div>
+            <h5 style="color: var(--text-primary); margin-bottom: 2px;">Essential Cookies</h5>
+            <p style="font-size: 0.8rem; color: var(--text-tertiary);">Required for theme changes and secure access.</p>
+          </div>
+          <input type="checkbox" checked disabled style="width: 20px; height: 20px; accent-color: var(--primary);">
+        </div>
+
+        <div style="display: flex; justify-content: space-between; align-items: center; padding: 12px; background: var(--bg-secondary); border-radius: var(--radius-sm);">
+          <div>
+            <h5 style="color: var(--text-primary); margin-bottom: 2px;">Analytics Cookies</h5>
+            <p style="font-size: 0.8rem; color: var(--text-tertiary);">Helps us improve performance metrics.</p>
+          </div>
+          <input type="checkbox" id="chk-cookie-analytics" checked style="width: 20px; height: 20px; accent-color: var(--primary);">
+        </div>
+
+        <div style="display: flex; justify-content: space-between; align-items: center; padding: 12px; background: var(--bg-secondary); border-radius: var(--radius-sm);">
+          <div>
+            <h5 style="color: var(--text-primary); margin-bottom: 2px;">Preferences Cookies</h5>
+            <p style="font-size: 0.8rem; color: var(--text-tertiary);">Remembers UI preferences and chat states.</p>
+          </div>
+          <input type="checkbox" id="chk-cookie-pref" checked style="width: 20px; height: 20px; accent-color: var(--primary);">
+        </div>
+        
+        <button id="save-cookie-pref-btn" class="btn btn-primary" style="width: 100%; margin-top: 10px;">Save Settings</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       DATA INQUIRY REQUEST MODAL
+       ========================================== -->
+  <div id="data-request-modal" class="modal" aria-hidden="true" role="dialog">
+    <div class="modal-content" style="max-width: 500px;">
+      <div class="modal-header">
+        <h3 id="data-modal-title">Request My Stored Data</h3>
+        <span class="close-modal" id="close-data-modal">&times;</span>
+      </div>
+      <div class="modal-body">
+        <form id="data-request-form" onsubmit="event.preventDefault(); alert('Request submitted successfully! Our DPO will contact you within 48 hours.'); document.getElementById('data-request-modal').classList.remove('active'); this.reset();">
+          <p style="font-size: 0.9rem; margin-bottom: 16px;" id="data-modal-desc">
+            Submit your registered email address below. We will compile a report of your personal files and send it to you.
+          </p>
+          <div class="calc-group" style="margin-bottom: 16px;">
+            <label for="data-req-email">Registered Email Address:</label>
+            <input type="email" id="data-req-email" placeholder="you@company.com" required style="width: 100%; padding: 10px 14px; border-radius: var(--radius-sm); border: 1px solid var(--border-color); background: var(--bg-secondary); color: var(--text-primary); outline: none;">
+          </div>
+          <div class="calc-group" style="margin-bottom: 20px; display: flex; align-items: flex-start; gap: 8px;">
+            <input type="checkbox" id="data-req-consent" required style="margin-top: 4px; width: 16px; height: 16px; accent-color: var(--primary);">
+            <label for="data-req-consent" style="font-weight: normal; font-size: 0.8rem; color: var(--text-tertiary);">
+              I verify that I am the owner of this email and request processed logs.
+            </label>
+          </div>
+          <button type="submit" id="data-submit-btn" class="btn btn-primary" style="width: 100%;">Submit Request</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Core JavaScript -->
+  <script src="js/app.js"></script>
+  <!-- Privacy Specific JavaScript -->
+  <script src="js/privacy.js"></script>
+</body>
+</html>

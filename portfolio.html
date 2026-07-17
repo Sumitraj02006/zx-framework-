@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zoryvex Studio | Beautiful, Fast & Professional Websites That Help Businesses Grow</title>
+  
+  <!-- SEO Metadata -->
+  <meta name="description" content="From local shops to modern startups, Zoryvex Studio creates premium, fast, and easy-to-understand websites that build trust, attract customers, and grow your business online. Get your free quote today!">
+  <meta name="keywords" content="digital agency, website builder, startup website, local business website, e-commerce storefront, personal branding, professional website design">
+  <meta name="author" content="Zoryvex Studio">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Zoryvex Studio | Professional Websites That Grow Your Business">
+  <meta property="og:description" content="Simple, beautiful, and transparent web design for startups, creators, and local businesses. No complex tech talk—just results.">
+  <meta property="og:image" content="images/hero-dashboard.png">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Zoryvex Studio | Professional Websites That Grow Your Business">
+  <meta property="twitter:description" content="Simple, beautiful, and transparent web design for startups, creators, and local businesses. No complex tech talk—just results.">
+  <meta property="twitter:image" content="images/hero-dashboard.png">
+
+  <!-- Icons & Fonts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="dark-theme">
+
+  <!-- ==========================================
+       PAGE LOADER
+       ========================================== -->
+  <div id="page-loader">
+    <div class="loader-spinner"></div>
+  </div>
+
+  <!-- ==========================================
+       HEADER & NAVIGATION
+       ========================================== -->
+  <header>
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="Zoryvex Studio Logo" class="logo-icon-img">
+        Zoryvex Studio
+      </a>
+      
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="process.html">Process</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li class="mobile-only-cta"><a href="contact.html" class="btn btn-primary">Get Free Quote</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-right">
+        
+
+        <!-- Light/Dark Toggle -->
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+          <i class="fas fa-sun sun-icon"></i>
+          <i class="fas fa-moon moon-icon"></i>
+        </button>
+
+        <!-- CTA Header Button -->
+        <a href="contact.html" class="btn btn-primary btn-sm">Get Free Quote</a>
+      </div>
+
+      <!-- Mobile Menu Toggle Button -->
+      <button id="mobile-menu-toggle" class="mobile-toggle" aria-label="Toggle Navigation Menu">
+        <span class="mobile-toggle-line"></span>
+        <span class="mobile-toggle-line"></span>
+        <span class="mobile-toggle-line"></span>
+      </button>
+    </div>
+  </header>
+
+  <main style="padding-top: 100px;">
+        <section id="portfolio" class="portfolio section">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge">Portfolio Work</span>
+          <h2>Our Latest Project Showcase</h2>
+          <p>Explore real websites we've built to help brands launch, establish trust, and close more sales.</p>
+        </div>
+
+        <!-- Filter tabs -->
+        <div class="portfolio-filters">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="local">Local Shops</button>
+          <button class="filter-btn" data-filter="startup">Startups</button>
+          <button class="filter-btn" data-filter="brand">Personal Brands</button>
+          <button class="filter-btn" data-filter="ecommerce">E-commerce</button>
+        </div>
+
+        <div class="portfolio-grid">
+          <div class="glass-card portfolio-card" data-category="startup">
+            <div class="portfolio-img-box">
+              <span class="portfolio-tag-overlay">Startup</span>
+              <img src="images/project-nexora.png" alt="Nexora Solutions mockup preview">
+            </div>
+            <div class="portfolio-card-info">
+              <h3>Nexora Solutions</h3>
+              <p>A fast, fully responsive landing page built to generate premium agency leads and showcase digital capabilities.</p>
+              <div class="portfolio-tech-list">
+                <span class="portfolio-tech-tag">HTML5</span>
+                <span class="portfolio-tech-tag">CSS3</span>
+                <span class="portfolio-tech-tag">Vanilla JavaScript (ES6)</span>
+                <span class="portfolio-tech-tag">CSS Grid</span>
+                <span class="portfolio-tech-tag">Flexbox</span>
+                <span class="portfolio-tech-tag">Google Fonts</span>
+                <span class="portfolio-tech-tag">Font Awesome</span>
+                <span class="portfolio-tech-tag">AOS</span>
+                <span class="portfolio-tech-tag">EmailJS</span>
+              </div>
+              <div class="portfolio-actions">
+                <button class="btn btn-secondary btn-sm open-case-study" data-study="nexora">Case Study</button>
+                <a href="https://business-landing-page-2026.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Start Online</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Gourmet Grind Café -->
+          <div class="glass-card portfolio-card" data-category="local">
+            <div class="portfolio-img-box">
+              <span class="portfolio-tag-overlay">Local Shop</span>
+              <img src="images/project-local.png" alt="Gourmet Grind Café mockup preview">
+            </div>
+            <div class="portfolio-card-info">
+              <h3>Gourmet Grind Café</h3>
+              <p>A minimalist, mobile-first website featuring an interactive menu and table reservation system.</p>
+              <div class="portfolio-tech-list">
+                <span class="portfolio-tech-tag">HTML5</span>
+                <span class="portfolio-tech-tag">CSS3</span>
+                <span class="portfolio-tech-tag">Vanilla JavaScript</span>
+                <span class="portfolio-tech-tag">CSS Grid</span>
+                <span class="portfolio-tech-tag">Flexbox</span>
+                <span class="portfolio-tech-tag">Swiper.js</span>
+                <span class="portfolio-tech-tag">GLightbox</span>
+                <span class="portfolio-tech-tag">Google Maps Embed</span>
+                <span class="portfolio-tech-tag">Font Awesome</span>
+              </div>
+              <div class="portfolio-actions">
+                <button class="btn btn-secondary btn-sm open-case-study" data-study="gourmet">Case Study</button>
+                <a href="https://premium-restaurant-website-nine.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Start Online</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Trendora Store -->
+          <div class="glass-card portfolio-card" data-category="ecommerce">
+            <div class="portfolio-img-box">
+              <span class="portfolio-tag-overlay">E-commerce</span>
+              <img src="images/project-ecommerce.png" alt="Trendora Store mockup preview">
+            </div>
+            <div class="portfolio-card-info">
+              <h3>Trendora Store</h3>
+              <p>A responsive e-commerce storefront with product search filters, cart features, and optimized checkouts.</p>
+              <div class="portfolio-tech-list">
+                <span class="portfolio-tech-tag">HTML5</span>
+                <span class="portfolio-tech-tag">CSS3</span>
+                <span class="portfolio-tech-tag">Vanilla JavaScript</span>
+                <span class="portfolio-tech-tag">LocalStorage</span>
+                <span class="portfolio-tech-tag">CSS Grid</span>
+                <span class="portfolio-tech-tag">Flexbox</span>
+                <span class="portfolio-tech-tag">Font Awesome</span>
+              </div>
+              <div class="portfolio-actions">
+                <button class="btn btn-secondary btn-sm open-case-study" data-study="trendora">Case Study</button>
+                <a href="https://premium-ecommerce-frontend.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Start Online</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: LearnSphere Academy -->
+          <div class="glass-card portfolio-card" data-category="startup">
+            <div class="portfolio-img-box">
+              <span class="portfolio-tag-overlay">Startup</span>
+              <img src="images/project-startup.png" alt="LearnSphere Academy mockup preview">
+            </div>
+            <div class="portfolio-card-info">
+              <h3>LearnSphere Academy</h3>
+              <p>A modern education platform with interactive course filters, schedules, and admission forms.</p>
+              <div class="portfolio-tech-list">
+                <span class="portfolio-tech-tag">HTML5</span>
+                <span class="portfolio-tech-tag">CSS3</span>
+                <span class="portfolio-tech-tag">Vanilla JavaScript</span>
+                <span class="portfolio-tech-tag">CSS Grid</span>
+                <span class="portfolio-tech-tag">Flexbox</span>
+                <span class="portfolio-tech-tag">AOS</span>
+                <span class="portfolio-tech-tag">Chart.js</span>
+                <span class="portfolio-tech-tag">Font Awesome</span>
+              </div>
+              <div class="portfolio-actions">
+                <button class="btn btn-secondary btn-sm open-case-study" data-study="learnsphere">Case Study</button>
+                <a href="https://premium-education-academy.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Start Online</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5: Creative Developer Portfolio -->
+          <div class="glass-card portfolio-card" data-category="brand">
+            <div class="portfolio-img-box">
+              <span class="portfolio-tag-overlay">Personal Brand</span>
+              <img src="images/project-brand.png" alt="Creative Developer Portfolio mockup preview">
+            </div>
+            <div class="portfolio-card-info">
+              <h3>Creative Developer Portfolio</h3>
+              <p>A modern portfolio with dynamic skill sections, animated timelines, and optimized application forms.</p>
+              <div class="portfolio-tech-list">
+                <span class="portfolio-tech-tag">HTML5</span>
+                <span class="portfolio-tech-tag">CSS3</span>
+                <span class="portfolio-tech-tag">Vanilla JavaScript</span>
+                <span class="portfolio-tech-tag">GSAP</span>
+                <span class="portfolio-tech-tag">Typed.js</span>
+                <span class="portfolio-tech-tag">ScrollReveal.js</span>
+                <span class="portfolio-tech-tag">EmailJS</span>
+                <span class="portfolio-tech-tag">Font Awesome</span>
+              </div>
+              <div class="portfolio-actions">
+                <button class="btn btn-secondary btn-sm open-case-study" data-study="creative_portfolio">Case Study</button>
+                <a href="https://premium-personal-portfolio-omega.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Start Online</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         PORTFOLIO CASE STUDY MODAL
+         ========================================== -->
+    <div id="case-study-modal" class="modal" aria-hidden="true" role="dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 id="modal-study-title">Project Case Study</h3>
+          <span class="close-modal">&times;</span>
+        </div>
+        <div class="modal-body">
+          <div class="modal-section-title">🏆 Business Goal:</div>
+          <p id="modal-study-goal"></p>
+          <div class="modal-section-title">⚠️ Challenge:</div>
+          <p id="modal-study-challenge"></p>
+          <div class="modal-section-title">💡 Solution:</div>
+          <p id="modal-study-solution"></p>
+          <div class="modal-section-title">📈 Launch Results:</div>
+          <p id="modal-study-results" style="font-weight: 600; color: var(--primary);"></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==========================================
+         PRICING & PACKAGE DETAILS
+         ========================================== -->
+        <div id="booking-modal" class="modal" aria-hidden="true" role="dialog">
+      <div class="modal-content" style="max-width: 520px;">
+        <div class="modal-header">
+          <h3>Schedule Consultation</h3>
+          <span id="close-booking-modal" class="close-modal">&times;</span>
+        </div>
+        <div class="modal-body">
+          <div class="calendar-widget">
+            <div class="calendar-header">
+              <h4 id="cal-month-title">Month Year</h4>
+            </div>
+            
+            <!-- Calendar Days Header -->
+            <div class="calendar-grid">
+              <div class="calendar-day-header">Su</div>
+              <div class="calendar-day-header">Mo</div>
+              <div class="calendar-day-header">Tu</div>
+              <div class="calendar-day-header">We</div>
+              <div class="calendar-day-header">Th</div>
+              <div class="calendar-day-header">Fr</div>
+              <div class="calendar-day-header">Sa</div>
+            </div>
+
+            <!-- Injected Calendar Days -->
+            <div id="cal-days-grid" class="calendar-grid"></div>
+            
+            <!-- Injected Time slots -->
+            <h4 style="margin-top: 16px;">Available Times (EST):</h4>
+            <div id="time-slots-container" class="time-slots">
+              <p style="font-size: 0.85rem; color: var(--text-tertiary);">Select a date above to display available slots.</p>
+            </div>
+
+            <button id="confirm-booking-btn" class="btn btn-accent" style="width: 100%; margin-top: 24px;">Confirm Call Slot</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+  
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <img src="images/logo.png" alt="Zoryvex Studio Logo" class="logo-icon-img">
+          Zoryvex Studio
+        </a>
+        <p>Providing premium, simple, and high-converting websites for startups, creators, and local businesses worldwide. Build. Launch. Grow.</p>
+      </div>
+
+      <div class="footer-links-col">
+        <h4>Services Offered</h4>
+        <ul>
+          <li><a href="services.html">Website Development</a></li>
+          <li><a href="services.html">Website Redesign</a></li>
+          <li><a href="services.html">Performance Speedup</a></li>
+          <li><a href="services.html">Weekly Site Care</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links-col">
+        <h4>Legal Documents</h4>
+        <ul>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms & Conditions</a></li>
+          <li><a href="refund.html">Refund Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-newsletter">
+        <h4>Stay Updated</h4>
+        <p>Subscribe to our newsletter for simple online sales tips and search updates.</p>
+        <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed successfully!'); this.reset();">
+          <input type="email" placeholder="Your email address" required aria-label="Newsletter email input">
+          <button type="submit" class="btn btn-primary btn-sm"><i class="fas fa-envelope"></i></button>
+        </form>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© 2026 Zoryvex Studio. All Rights Reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  
+
+  <!-- ==========================================
+       FLOATING WHATSAPP BUTTON
+       ========================================== -->
+  <a href="https://wa.me/15559028822" class="floating-whatsapp" target="_blank" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- ==========================================
+       BACK TO TOP BUTTON
+       ========================================== -->
+  <button id="back-to-top" aria-label="Back To Top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- ==========================================
+       LIVE CHAT WIDGET
+       ========================================== -->
+  <div class="live-chat-widget">
+    <button id="chat-toggle" class="chat-toggle-btn" aria-label="Open Help Chat">
+      <i class="far fa-comments"></i>
+    </button>
+    
+    <div id="chat-box" class="chat-box glass-card">
+      <div class="chat-header">
+        <h4>Zoryvex Studio Helper</h4>
+        <span id="close-chat" class="close-chat">&times;</span>
+      </div>
+      
+      <div id="chat-messages" class="chat-messages">
+        <div class="chat-msg bot">
+          Hey there! 👋 Welcome to Zoryvex Studio. How can we help grow your business online today?
+        </div>
+      </div>
+
+      <div class="chat-input-area">
+        <input type="text" id="chat-input" placeholder="Type a message..." aria-label="Chat input message">
+        <button id="chat-send" class="chat-send-btn" aria-label="Send message"><i class="fas fa-paper-plane"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       COOKIE CONSENT BANNER
+       ========================================== -->
+  <div id="cookie-banner" class="cookie-banner glass-card">
+    <h4>Cookie Consent</h4>
+    <p>We use cookies to improve page loading speeds and analyze website traffic performance. By clicking Accept, you agree to our policies.</p>
+    <div class="cookie-buttons">
+      <button id="accept-cookies" class="btn btn-accent btn-sm">Accept All</button>
+      <button id="decline-cookies" class="btn btn-secondary btn-sm">Decline</button>
+    </div>
+  </div>
+
+  <!-- Core JavaScript -->
+  <script src="js/app.js"></script>
+</body>
+</html>

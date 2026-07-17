@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms & Conditions | Zoryvex Studio</title>
+  
+  <!-- SEO Metadata -->
+  <meta name="description" content="Please read the Terms & Conditions of Zoryvex Studio. Understand client responsibilities, project workflows, payment structure, and website ownership terms.">
+  <meta name="author" content="Zoryvex Studio">
+  
+  <!-- Icons & Fonts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="dark-theme">
+
+  <!-- Scroll Progress Indicator -->
+  <div id="scroll-progress-bar" style="position: fixed; top: 0; left: 0; height: 4px; background: linear-gradient(90deg, var(--primary), var(--accent)); width: 0%; z-index: 1000; transition: width 0.1s ease;"></div>
+
+  <!-- ==========================================
+       PAGE LOADER
+       ========================================== -->
+  <div id="page-loader">
+    <div class="loader-spinner"></div>
+  </div>
+
+  <!-- ==========================================
+       HEADER & NAVIGATION
+       ========================================== -->
+  <header>
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="Zoryvex Studio Logo" class="logo-icon-img">
+        Zoryvex Studio
+      </a>
+      
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="process.html">Process</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li class="mobile-only-cta"><a href="contact.html" class="btn btn-primary">Get Free Quote</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-right">
+        <!-- Theme Toggle -->
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+          <i class="fas fa-sun sun-icon"></i>
+          <i class="fas fa-moon moon-icon"></i>
+        </button>
+
+        <!-- CTA Header Button -->
+        <a href="contact.html" class="btn btn-primary btn-sm">Get Free Quote</a>
+      </div>
+
+      <!-- Mobile Menu Toggle Button -->
+      <button id="mobile-menu-toggle" class="mobile-toggle" aria-label="Toggle Navigation Menu">
+        <span class="mobile-toggle-line"></span>
+        <span class="mobile-toggle-line"></span>
+        <span class="mobile-toggle-line"></span>
+      </button>
+    </div>
+  </header>
+
+  <main style="padding-top: 100px;">
+    
+    <!-- ==========================================
+         TERMS HERO
+         ========================================== -->
+    <section class="privacy-hero" style="background: var(--bg-secondary); padding: 60px 0; border-bottom: 1px solid var(--border-color);">
+      <div class="container" style="display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 40px; align-items: center;">
+        <div>
+          <span class="badge">Legal Agreement</span>
+          <h1 style="font-size: 3rem; margin-top: 12px; margin-bottom: 16px;">Terms & Conditions</h1>
+          <p style="font-size: 1.1rem; line-height: 1.6; color: var(--text-secondary); margin-bottom: 24px;">
+            Please read these Terms & Conditions carefully before using Zoryvex Studio services. These terms explain the responsibilities, rights, payment process, project workflow, and service conditions between Zoryvex Studio and its clients.
+          </p>
+          <div style="display: flex; gap: 24px; flex-wrap: wrap; margin-bottom: 24px; font-size: 0.9rem; color: var(--text-tertiary);">
+            <div><i class="far fa-calendar-alt" style="margin-right: 6px; color: var(--primary);"></i> <strong>Effective Date:</strong> <span class="dynamic-date"></span></div>
+            <div><i class="far fa-clock" style="margin-right: 6px; color: var(--primary);"></i> <strong>Last Updated:</strong> <span class="dynamic-date"></span></div>
+          </div>
+          <!-- Trust Badges -->
+          <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+            <span class="badge" style="background: rgba(34,197,94,0.1); color: #22c55e; border: 1px solid rgba(34,197,94,0.2);"><i class="fas fa-eye"></i> Transparent Business</span>
+            <span class="badge" style="background: rgba(59,130,246,0.1); color: #3b82f6; border: 1px solid rgba(59,130,246,0.2);"><i class="fas fa-credit-card"></i> Secure Payments</span>
+            <span class="badge" style="background: rgba(168,85,247,0.1); color: #a855f7; border: 1px solid rgba(168,85,247,0.2);"><i class="fas fa-user-tie"></i> Professional Services</span>
+            <span class="badge" style="background: rgba(234,179,8,0.1); color: #eab308; border: 1px solid rgba(234,179,8,0.2);"><i class="fas fa-heart"></i> Customer First</span>
+          </div>
+        </div>
+        <div style="display: flex; justify-content: center;">
+          <img src="images/terms-illustration.png" alt="Zoryvex Studio Terms & Conditions Contract Illustration" style="max-width: 100%; height: auto; max-height: 280px; border-radius: var(--radius-lg); box-shadow: var(--shadow-lg);">
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         TOOLBAR & SEARCH CONTAINER
+         ========================================== -->
+    <section style="background: var(--bg-primary); padding: 20px 0; position: sticky; top: 80px; z-index: 100; border-bottom: 1px solid var(--border-color); backdrop-filter: blur(12px); background: rgba(var(--bg-primary-rgb), 0.85);">
+      <div class="container" style="display: flex; justify-content: space-between; align-items: center; gap: 20px; flex-wrap: wrap;">
+        <div style="position: relative; width: 320px; max-width: 100%;">
+          <input type="text" id="policy-search" placeholder="Search terms & conditions..." style="width: 100%; padding: 10px 16px 10px 40px; border-radius: var(--radius-sm); border: 1px solid var(--border-color); background: var(--bg-secondary); color: var(--text-primary); outline: none;">
+          <i class="fas fa-search" style="position: absolute; left: 16px; top: 50%; transform: translateY(-50%); color: var(--text-tertiary);"></i>
+        </div>
+        <div style="display: flex; gap: 12px;">
+          <button id="btn-print-policy" class="btn btn-secondary btn-sm"><i class="fas fa-print"></i> Print Terms</button>
+          <button id="btn-download-pdf" class="btn btn-primary btn-sm"><i class="fas fa-file-pdf"></i> Download PDF</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         TERMS POLICY CONTENT
+         ========================================== -->
+    <section style="padding: 60px 0; background: var(--bg-primary);">
+      <div class="container" style="display: grid; grid-template-columns: 280px 1fr; gap: 50px;">
+        
+        <!-- Sidebar Navigation (Sticky Table of Contents) -->
+        <aside class="privacy-sidebar" style="position: sticky; top: 160px; height: fit-content; max-height: calc(100vh - 180px); overflow-y: auto; padding-right: 15px;">
+          <h4 style="font-family: var(--font-heading); margin-bottom: 20px; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px; color: var(--text-primary);">TOC Navigation</h4>
+          <ul id="policy-toc" style="list-style: none; display: flex; flex-direction: column; gap: 10px; font-size: 0.9rem;">
+            <li><a href="#acceptance" class="toc-link active">1. Acceptance of Terms</a></li>
+            <li><a href="#about" class="toc-link">2. About Zoryvex Studio</a></li>
+            <li><a href="#services" class="toc-link">3. Services We Provide</a></li>
+            <li><a href="#pricing" class="toc-link">4. Pricing & Quotations</a></li>
+            <li><a href="#payment" class="toc-link">5. Payment Terms</a></li>
+            <li><a href="#timeline" class="toc-link">6. Project Timeline</a></li>
+            <li><a href="#client-resp" class="toc-link">7. Client Responsibilities</a></li>
+            <li><a href="#revisions" class="toc-link">8. Revisions Policy</a></li>
+            <li><a href="#domain-hosting" class="toc-link">9. Domain & Hosting</a></li>
+            <li><a href="#ownership" class="toc-link">10. Website Ownership</a></li>
+            <li><a href="#maintenance" class="toc-link">11. Website Maintenance</a></li>
+            <li><a href="#cancellation" class="toc-link">12. Project Cancellation</a></li>
+            <li><a href="#refund" class="toc-link">13. Refund Policy</a></li>
+            <li><a href="#ip" class="toc-link">14. Intellectual Property</a></li>
+            <li><a href="#third-party" class="toc-link">15. Third-Party Services</a></li>
+            <li><a href="#liability" class="toc-link">16. Limitation of Liability</a></li>
+            <li><a href="#confidentiality" class="toc-link">17. Confidentiality</a></li>
+            <li><a href="#force-majeure" class="toc-link">18. Force Majeure</a></li>
+            <li><a href="#changes" class="toc-link">19. Changes to Terms</a></li>
+            <li><a href="#governing-law" class="toc-link">20. Governing Law</a></li>
+            <li><a href="#contact" class="toc-link">21. Contact Information</a></li>
+          </ul>
+        </aside>
+
+        <!-- Terms Document Details -->
+        <div class="privacy-document-body" style="line-height: 1.7; color: var(--text-secondary);">
+          
+          <!-- Section 1: Acceptance of Terms -->
+          <article id="acceptance" class="policy-section" style="margin-bottom: 50px; scroll-margin-top: 160px;">
+            <h2 style="font-size: 1.8rem; margin-bottom: 20px; color: var(--text-primary); border-left: 4px solid var(--primary); padding-left: 15px;">1. Acceptance of Terms</h2>
+            <p style="margin-bottom: 16px;">
+              By accessing the Zoryvex Studio website or acquiring any web design, development, optimization, or digital consultation services from us, you agree to comply with and be bound by these Terms & Conditions.
+            </p>
+            <p>
+              Please read these conditions carefully. If you do not agree to any conditions listed here, please discontinue using this site and do not initiate any service agreements with our agency.
+            </p>
+          </article>
+
+          <!-- Section 2: About Zoryvex Studio -->
+          <article id="about" class="policy-section" style="margin-bottom: 50px; scroll-margin-top: 160px;">
+            <h2 style="font-size: 1.8rem; margin-bottom: 20px; color: var(--text-primary); border-left: 4px solid var(--primary); padding-left: 15px;">2. About Zoryvex Studio</h2>
+            <p>
+              Zoryvex Studio is an Indian digital solutions and technology agency providing professional web development, UI/UX graphic layouts, speed audit cleanups, SEO, and consultation solutions. We serve startups, storefront local shops, freelancers, coaching institutes, medical clinics, content creators, and enterprise establishments globally.
+            </p>
+          </article>
+
+          <!-- Section 3: Services We Provide -->
+          <article id="services" class="policy-section" style="margin-bottom: 50px; scroll-margin-top: 160px;">
+            <h2 style="font-size: 1.8rem; margin-bottom: 20px; color: var(--text-primary); border-left: 4px solid var(--primary); padding-left: 15px;">3. Services We Provide</h2>
+            <p style="margin-bottom: 24px;">
+              Our services are structured to deliver premium results. We specialize in the following areas:
+            </p>
+            
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 24px;" class="info-collect-grid">
+              <div class="glass-card" style="padding: 20px; border-radius: var(--radius-sm);">
+                <h4 style="color: var(--text-primary); margin-bottom: 10px;"><i class="fas fa-code" style="color: var(--primary); margin-right: 8px;"></i> Development & Layouts</h4>
+                <ul style="list-style: none; display: flex; flex-direction: column; gap: 6px; font-size: 0.875rem;">
+                  <li><i class="fas fa-angle-right" style="color: var(--accent);"></i> Business Website Development</li>
+                  <li><i class="fas fa-angle-right" style="color: var(--accent);"></i> Portfolio Web Layouts</li>
+                  <li><i class="fas fa-angle-right" style="color: var(--accent);"></i> Landing Page Optimization</li>
+                  <li><i class="fas fa-angle-right" style="color: var(--accent);"></i> E-Commerce Stores (Shopify/WooCommerce)</li>
+                  <li><i class="fas fa-angle-right" style="color: var(--accent);"></i> Website Redesign & Modernization</li>
+                </ul>
+              </div>
+              <div class="glass-card" style="padding: 20px; border-radius: var(--radius-sm);">
+                <h4 style="color: var(--text-primary); margin-bottom: 10px;"><i class="fas fa-tools" style="color: var(--primary); margin-right: 8px;"></i> Optimization & Setup</h4>
+                <ul style="list-style: none; display: flex; flex-direction: column; gap: 6px; font-size: 0.875rem;">
+                  <li><i class="fas fa-angle-right" style="color: var(--accent);"></i> Website Speed Optimization</li>
+                  <li><i class="fas fa-angle-right" style="color: var(--accent);"></i> UI/UX Design Drafts</li>
+                  <li><i class="fas fa-angle-right" style="color: var(--accent);"></i> Domain Configuration & SSL Install</li>
+                  <li><i class="fas fa-angle-right" style="color: var(--accent);"></i> Hosting Configuration & Backups</li>
+                  <li><i class="fas fa-angle-right" style="color: var(--accent);"></i> SEO Services & Consultation</li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="glass-card" style="padding: 16px; border-radius: var(--radius-sm); text-align: center; border-left: 4px solid var(--accent);">
+              <p style="font-weight: 500; font-size: 0.95rem; color: var(--text-primary);">
+                ✨ <strong>Note:</strong> Additional custom technology solutions may be provided after individual client project discussions.
+              </p>
+            </div>
+          </article>
+
+          <!-- Section 4: Pricing & Quotations -->
+          <article id="pricing" class="policy-section" style="margin-bottom: 50px; scroll-margin-top: 160px;">
+            <h2 style="font-size: 1.8rem; margin-bottom: 20px; color: var(--text-primary); border-left: 4px solid var(--primary); padding-left: 15px;">4. Pricing & Quotations</h2>
+            <p style="margin-bottom: 16px;">
+              The packages and numbers displayed on the Zoryvex Studio site represent <strong>starting estimations only</strong>. Every client project is unique, and custom proposals are prepared after scoping your specific requirements.
+            </p>
+            
+            <div class="glass-card" style="padding: 20px; border-radius: var(--radius-sm); border-left: 4px solid var(--primary); background: rgba(37,99,235,0.02); margin-bottom: 16px;">
+              <p style="font-style: italic; font-size: 0.95rem; color: var(--text-primary);">
+                "Final pricing may differ from the starting price depending on your project requirements (website pages, custom integrations, design complexity). A detailed written proposal quotation will always be shared and agreed upon before work begins."
+              </p>
+            </div>
+          </article>
+
+          <!-- Section 5: Payment Terms -->
+          <article id="payment" class="policy-section" style="margin-bottom: 50px; scroll-margin-top: 160px;">
+            <h2 style="font-size: 1.8rem; margin-bottom: 20px; color: var(--text-primary); border-left: 4px solid var(--primary); padding-left: 15px;">5. Payment Terms</h2>
+            <p style="margin-bottom: 20px;">
+              To protect resource allocation and ensure timely delivery, Zoryvex Studio utilizes a milestone payment model:
+            </p>
+            
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px;" class="info-collect-grid">
+              <div class="glass-card" style="padding: 24px; text-align: center; border-radius: var(--radius-sm);">
+                <span class="badge" style="background: rgba(37,99,235,0.1); color: var(--primary); margin-bottom: 8px;">Step 1</span>
+                <h3 style="font-size: 2rem; color: var(--text-primary); margin-bottom: 8px;">40%</h3>
+                <h4 style="font-size: 1.1rem; color: var(--text-secondary); margin-bottom: 8px;">Advance Deposit</h4>
+                <p style="font-size: 0.85rem; color: var(--text-tertiary);">Required to schedule planning and initiate UI development.</p>
+              </div>
+              <div class="glass-card" style="padding: 24px; text-align: center; border-radius: var(--radius-sm);">
+                <span class="badge" style="background: rgba(168,85,247,0.1); color: #a855f7; margin-bottom: 8px;">Step 2</span>
+                <h3 style="font-size: 2rem; color: var(--text-primary); margin-bottom: 8px;">60%</h3>
+                <h4 style="font-size: 1.1rem; color: var(--text-secondary); margin-bottom: 8px;">Final Clearance</h4>
+                <p style="font-size: 0.85rem; color: var(--text-tertiary);">Paid upon project completion, prior to server file transfer or domain launch.</p>
+              </div>
+            </div>
+            
+            <p style="margin-bottom: 16px;">
+              Project coding and configuration commence only after the advance deposit is cleared. Invoices are issued for every project payment.
+            </p>
+            
+            <h4 style="color: var(--text-primary); margin-bottom: 10px;">Accepted Payment Methods:</h4>
+            <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+              <span class="badge" style="background: var(--bg-secondary);"><i class="fas fa-qrcode"></i> UPI (GPay/PhonePe/Paytm)</span>
+              <span class="badge" style="background: var(--bg-secondary);"><i class="fas fa-university"></i> Bank Transfer (NEFT/IMPS)</span>
+              <span class="badge" style="background: var(--bg-secondary);"><i class="fas fa-credit-card"></i> Razorpay (Indian Cards)</span>
+              <span class="badge" style="background: var(--bg-secondary);"><i class="fab fa-paypal"></i> PayPal (International Clients)</span>
+            </div>
+          </article>
+
+          <!-- Section 6: Project Timeline -->
+          <article id="timeline" class="policy-section" style="margin-bottom: 50px; scroll-margin-top: 160px;">
+            <h2 style="font-size: 1.8rem; margin-bottom: 20px; color: var(--text-primary); border-left: 4px solid var(--primary); padding-left: 15px;">6. Project Timeline</h2>
+            <p style="margin-bottom: 20px;">
+              Delivery targets depend on specifications, responsive client reviews, and content readiness. Typical development spans:
+            </p>
+            
+            <div class="glass-card" style="padding: 24px; border-radius: var(--radius-md);">
+              <ul style="list-style: none; display: flex; flex-direction: column; gap: 12px; font-size: 0.95rem;">
+                <li style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--border-color); padding-bottom: 8px;">
+                  <span><strong>Single Page Landing Site:</strong></span>
+                  <span style="color: var(--primary); font-weight: 600;">3–5 Business Days</span>
+                </li>
+                <li style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--border-color); padding-bottom: 8px;">
+                  <span><strong>Business/Startup Website (Up to 10 pages):</strong></span>
+                  <span style="color: var(--primary); font-weight: 600;">5–7 Business Days</span>
+                </li>
+                <li style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--border-color); padding-bottom: 8px;">
+                  <span><strong>Advanced Custom Web/Portal:</strong></span>
+                  <span style="color: var(--primary); font-weight: 600;">7–15 Business Days</span>
+                </li>
+                <li style="display: flex; justify-content: space-between;">
+                  <span><strong>Enterprise/E-Commerce Suite:</strong></span>
+                  <span style="color: var(--primary); font-weight: 600;">10–15 Business Days</span>
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Section 7: Client Responsibilities -->
+          <article id="client-resp" class="policy-section" style="margin-bottom: 50px; scroll-margin-top: 160px;">
+            <h2 style="font-size: 1.8rem; margin-bottom: 20px; color: var(--text-primary); border-left: 4px solid var(--primary); padding-left: 15px;">7. Client Responsibilities</h2>
+            <p style="margin-bottom: 16px;">
+              A successful website launch is a collaborative effort. To avoid delays, the client is responsible for providing:
+            </p>
+            <ul style="list-style: none; display: flex; flex-direction: column; gap: 10px; font-size: 0.95rem; margin-bottom: 20px;">
+              <li><i class="fas fa-chevron-right" style="color: var(--accent); margin-right: 8px;"></i> Corporate information, logo vectors, and branding layouts.</li>
+              <li><i class="fas fa-chevron-right" style="color: var(--accent); margin-right: 8px;"></i> HD images, copy texts, and certificates (if applicable).</li>
+              <li><i class="fas fa-chevron-right" style="color: var(--accent); margin-right: 8px;"></i> Clear, compiled review feedback within agreed review rounds.</li>
+              <li><i class="fas fa-chevron-right" style="color: var(--accent); margin-right: 8px;"></i> Domain access credentials or DNS registers (if launching independently).</li>
+            </ul>
+            <div class="glass-card" style="padding: 16px; border-radius: var(--radius-sm); border-left: 4px solid #ef4444; background: rgba(239,68,68,0.02);">
+              <p style="font-size: 0.9rem;">
+                ⚠️ <strong>Timeline Extension:</strong> Delays caused by missing content, incomplete assets, or slow client review replies will extend delivery schedules accordingly.
+              </p>
+            </div>
+          </article>
+
+          <!-- Section 8: Revisions Policy -->
+          <article id="revisions" class="policy-section" style="margin-bottom: 50px; scroll-margin-top: 160px;">
+            <h2 style="font-size: 1.8rem; margin-bottom: 20px; color: var(--text-primary); border-left: 4px solid var(--primary); padding-left: 15px;">8. Revisions Policy</h2>
+            <p style="margin-bottom: 20px;">
+              We want you to love your website. Each package includes designated free review rounds to adjust styling layout details:
+            </p>
+            
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 20px;" class="info-collect-grid">
+              <div class="glass-card" style="padding: 16px; text-align: center; border-radius: var(--radius-sm);">
+                <h4 style="color: var(--text-primary); margin-bottom: 8px;">Starter Package</h4>
+                <div style="font-size: 1.5rem; font-weight: 700; color: var(--primary); margin-bottom: 8px;">2 Rounds</div>
+                <p style="font-size: 0.8rem;">Free Design Revisions</p>
+              </div>
+              <div class="glass-card" style="padding: 16px; text-align: center; border-radius: var(--radius-sm);">
+                <h4 style="color: var(--text-primary); margin-bottom: 8px;">Business Package</h4>
+                <div style="font-size: 1.5rem; font-weight: 700; color: var(--primary); margin-bottom: 8px;">3 Rounds</div>
+                <p style="font-size: 0.8rem;">Free Design Revisions</p>
+              </div>
+              <div class="glass-card" style="padding: 16px; text-align: center; border-radius: var(--radius-sm);">
+                <h4 style="color: var(--text-primary); margin-bottom: 8px;">Professional / E-Com</h4>
+                <div style="font-size: 1.5rem; font-weight: 700; color: var(--primary); margin-bottom: 8px;">5 Rounds</div>
+                <p style="font-size: 0.8rem;">Free Design Revisions</p>
+              </div>
+            </div>
+            
+            <p style="font-size: 0.9rem; color: var(--text-tertiary);">
+              * Review requests exceeding package allotments or requesting post-launch layout rebuilding are charged at custom hourly support rates.
+            </p>
+          </article>
+
+          <!-- Section 9: Domain & Hosting -->
+          <article id="domain-hosting" class="policy-section" style="margin-bottom: 50px; scroll-margin-top: 160px;">
+            <h2 style="font-size: 1.8rem; margin-bottom: 20px; color: var(--text-primary); border-left: 4px solid var(--primary); padding-left: 15px;">9. Domain & Hosting</h2>
+            <p style="margin-bottom: 16px;">
+              If Zoryvex Studio registers a domain name or registers server space on your behalf, complete ownership credentials and access sheets will be handed over to you immediately upon receipt of full final payment.
+            </p>
+            <p>
+              Hosting renewals and domain registrations are recurring third-party costs billed annually. These bills are the client's direct responsibility after ownership transfer, unless otherwise specified in your maintenance package.
+            </p>
+          </article>
+
+          <!-- Section 10: Website Ownership -->
+          <article id="ownership" class="policy-section" style="margin-bottom: 50px; scroll-margin-top: 160px;">
+            <h2 style="font-size: 1.8rem; margin-bottom: 20px; color: var(--text-primary); border-left: 4px solid var(--primary); padding-left: 15px;">10. Website Ownership</h2>
+            <p style="margin-bottom: 16px;">
+              Once the final milestone payment (60%) is cleared, <strong>the client becomes the sole owner</strong> of the completed code, text copy, graphic layouts, and database files of the project.
+            </p>
+            <p style="font-size: 0.95rem; color: var(--text-secondary);">
+              * Zoryvex Studio retains the right to showcase the completed project, logo snapshot, and results in our digital portfolio and agency marketing channels, unless a written Non-Disclosure Agreement (NDA) is signed prior to project startup.
+            </p>
+          </article>
+
+          <!-- Section 11: Website Maintenance -->
+          <article id="maintenance" class="policy-section" style="margin-bottom: 50px; scroll-margin-top: 160px;">
+            <h2 style="font-size: 1.8rem; margin-bottom: 20px; color: var(--text-primary); border-left: 4px solid var(--primary); padding-left: 15px;">11. Website Maintenance</h2>
+            <p style="margin-bottom: 16px;">
+              Free technical support (fixing code errors or server glitches) is provided for a designated period (1 to 3 months) depending on the package purchased.
+            </p>
+            <p>
+              Ongoing updates, page additions, content expansions, and database backups after this initial care period are available through our monthly Care Plans.
+            </p>
+          </article>
+
+          <!-- Section 12: Project Cancellation -->
+          <article id="cancellation" class="policy-section" style="margin-bottom: 50px; scroll-margin-top: 160px;">
+            <h2 style="font-size: 1.8rem; margin-bottom: 20px; color: var(--text-primary); border-left: 4px solid var(--primary); padding-left: 15px;">12. Project Cancellation</h2>
+            <p style="margin-bottom: 16px;">
+              Either party may request project cancellation in writing.
+            </p>
+            <p>
+              If cancellation occurs after project kickoff, the initial 40% advance payment is <strong>non-refundable</strong>. This deposit covers the resources, planning, designer hours, and layout drafting already spent on your project. Any design files completed before cancellation can be shared depending on the proportion of payment completed.
+            </p>
+          </article>
+
+          <!-- Section 13: Refund Policy -->
+          <article id="refund" class="policy-section" style="margin-bottom: 50px; scroll-margin-top: 160px;">
+            <h2 style="font-size: 1.8rem; margin-bottom: 20px; color: var(--text-primary); border-left: 4px solid var(--primary); padding-left: 15px;">13. Refund Policy</h2>
+            <p style="margin-bottom: 20px;">
+              Refund processing, eligibility conditions, and request procedures are structured under our dedicated Refund Policy framework.
+            </p>
+            <a href="refund.html" class="btn btn-secondary"><i class="fas fa-external-link-alt"></i> View Refund Policy</a>
+          </article>
+
+          <!-- Section 14: Intellectual Property -->
+          <article id="ip" class="policy-section" style="margin-bottom: 50px; scroll-margin-top: 160px;">
+            <h2 style="font-size: 1.8rem; margin-bottom: 20px; color: var(--text-primary); border-left: 4px solid var(--primary); padding-left: 15px;">14. Intellectual Property</h2>
+            <p>
+              All custom graphics, source code, designs, and database components created by Zoryvex Studio during the project build remain the intellectual property of Zoryvex Studio until the final project payment is cleared in full. Upon final payment receipt, all rights transfer immediately to the client.
+            </p>
+          </article>
+
+          <!-- Section 15: Third-Party Services -->
+          <article id="third-party" class="policy-section" style="margin-bottom: 50px; scroll-margin-top: 160px;">
+            <h2 style="font-size: 1.8rem; margin-bottom: 20px; color: var(--text-primary); border-left: 4px solid var(--primary); padding-left: 15px;">15. Third-Party Services</h2>
+            <p style="margin-bottom: 16px;">
+              Zoryvex Studio website installations may utilize third-party widgets and cloud APIs, such as Google (Maps, Fonts, Analytics), WhatsApp, Cloudflare, Razorpay/UPI gateways, and hosting servers.
+            </p>
+            <p>
+              These applications operate under their own independent terms and policies. Zoryvex Studio is not responsible for changes, downtime, or policy updates made by these external providers.
+            </p>
+          </article>
+
+          <!-- Section 16: Limitation of Liability -->
+          <article id="liability" class="policy-section" style="margin-bottom: 50px; scroll-margin-top: 160px;">
+            <h2 style="font-size: 1.8rem; margin-bottom: 20px; color: var(--text-primary); border-left: 4px solid var(--primary); padding-left: 15px;">16. Limitation of Liability</h2>
+            <p style="margin-bottom: 16px;">
+              Zoryvex Studio strives to build robust and secure websites. However, we are not liable for:
+            </p>
+            <ul style="list-style: none; display: flex; flex-direction: column; gap: 8px; font-size: 0.95rem;">
+              <li><i class="fas fa-times-circle" style="color: #ef4444; margin-right: 8px;"></i> Direct or indirect loss of business revenue or client sales.</li>
+              <li><i class="fas fa-times-circle" style="color: #ef4444; margin-right: 8px;"></i> Outages, server breakdowns, or security breaches on third-party hosting nodes.</li>
+              <li><i class="fas fa-times-circle" style="color: #ef4444; margin-right: 8px;"></i> API outages (WhatsApp, Google Maps, Payment Gateways).</li>
+              <li><i class="fas fa-times-circle" style="color: #ef4444; margin-right: 8px;"></i> Client credentials loss or local database corruption caused by client modifications.</li>
+            </ul>
+          </article>
+
+          <!-- Section 17: Confidentiality -->
+          <article id="confidentiality" class="policy-section" style="margin-bottom: 50px; scroll-margin-top: 160px;">
+            <h2 style="font-size: 1.8rem; margin-bottom: 20px; color: var(--text-primary); border-left: 4px solid var(--primary); padding-left: 15px;">17. Confidentiality</h2>
+            <p>
+              We value your business integrity. Any business credentials, project specifications, proprietary text, and financial documentation shared by our clients will be kept strictly confidential. We do not disclose details to unauthorized third parties without your written approval, unless legally requested by law enforcement.
+            </p>
+          </article>
+
+          <!-- Section 18: Force Majeure -->
+          <article id="force-majeure" class="policy-section" style="margin-bottom: 50px; scroll-margin-top: 160px;">
+            <h2 style="font-size: 1.8rem; margin-bottom: 20px; color: var(--text-primary); border-left: 4px solid var(--primary); padding-left: 15px;">18. Force Majeure</h2>
+            <p>
+              Delays in project delivery caused by circumstances beyond our reasonable control—including natural disasters, state-wide internet blackouts, government lockdowns, regional grid failures, cyberattacks, or server breakdowns—shall not constitute a breach of this contract. Delivery schedules will be adjusted accordingly.
+            </p>
+          </article>
+
+          <!-- Section 19: Changes to Terms -->
+          <article id="changes" class="policy-section" style="margin-bottom: 50px; scroll-margin-top: 160px;">
+            <h2 style="font-size: 1.8rem; margin-bottom: 20px; color: var(--text-primary); border-left: 4px solid var(--primary); padding-left: 15px;">19. Changes to Terms</h2>
+            <p>
+              Zoryvex Studio reserves the right to update these Terms & Conditions from time to time. The latest updates are indicated by shifting the "Last Updated" date at the header. We encourage clients to review this page periodically.
+            </p>
+          </article>
+
+          <!-- Section 20: Governing Law -->
+          <article id="governing-law" class="policy-section" style="margin-bottom: 50px; scroll-margin-top: 160px;">
+            <h2 style="font-size: 1.8rem; margin-bottom: 20px; color: var(--text-primary); border-left: 4px solid var(--primary); padding-left: 15px;">20. Governing Law</h2>
+            <p>
+              These Terms & Conditions and all active service proposals are governed by the laws of India. Any contract disputes, collection failures, or legal claims shall be resolved under the exclusive jurisdiction applicable to Zoryvex Studio's registered office location in Noida, Uttar Pradesh, India.
+            </p>
+          </article>
+
+          <!-- Section 21: Contact Information -->
+          <article id="contact" class="policy-section" style="margin-bottom: 50px; scroll-margin-top: 160px;">
+            <h2 style="font-size: 1.8rem; margin-bottom: 20px; color: var(--text-primary); border-left: 4px solid var(--primary); padding-left: 15px;">21. Contact Information</h2>
+            <p style="margin-bottom: 20px;">
+              For any questions regarding these Terms & Conditions or to resolve billing tickets, reach out to our team:
+            </p>
+            
+            <!-- Professional Contact Card -->
+            <div class="glass-card contact-card-grid" style="padding: 32px; border-radius: var(--radius-md); display: grid; grid-template-columns: 1fr 1fr; gap: 24px;">
+              <div>
+                <h3 style="font-size: 1.4rem; color: var(--primary); margin-bottom: 16px;">Zoryvex Studio</h3>
+                <ul style="list-style: none; display: flex; flex-direction: column; gap: 12px; font-size: 0.95rem;">
+                  <li><i class="fas fa-envelope" style="color: var(--accent); margin-right: 10px; width: 16px;"></i> <a href="mailto:contact@zoryvex.com" style="color: var(--text-primary);">contact@zoryvex.com</a></li>
+                  <li><i class="fas fa-phone" style="color: var(--accent); margin-right: 10px; width: 16px;"></i> +91-98765 43210</li>
+                  <li><i class="fas fa-globe" style="color: var(--accent); margin-right: 10px; width: 16px;"></i> <a href="index.html" style="color: var(--text-primary);">www.zoryvex.com</a></li>
+                </ul>
+              </div>
+              <div>
+                <h4 style="color: var(--text-primary); margin-bottom: 12px;">Office & Support Hours</h4>
+                <p style="font-size: 0.95rem; margin-bottom: 12px;">
+                  <i class="fas fa-map-marker-alt" style="color: var(--accent); margin-right: 6px;"></i> Sector 62, Noida, Uttar Pradesh, India
+                </p>
+                <p style="font-size: 0.9rem; color: var(--text-tertiary);">
+                  <i class="far fa-clock" style="color: var(--accent); margin-right: 6px;"></i> Monday – Saturday<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10:00 AM – 7:00 PM (IST)
+                </p>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         HIGHLIGHTED BOTTOM NOTICE
+         ========================================== -->
+    <section style="background: var(--bg-secondary); padding: 40px 0; text-align: center; border-top: 1px solid var(--border-color);">
+      <div class="container" style="max-width: 800px;">
+        <i class="fas fa-handshake" style="font-size: 2.5rem; color: var(--primary); margin-bottom: 16px;"></i>
+        <h3 style="font-size: 1.3rem; line-height: 1.6; font-weight: 500; color: var(--text-primary);">
+          Zoryvex Studio believes in transparency, professionalism, and long-term partnerships. These Terms & Conditions are designed to protect both our clients and our business while ensuring a smooth and successful project experience.
+        </h3>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <img src="images/logo.png" alt="Zoryvex Studio Logo" class="logo-icon-img">
+          Zoryvex Studio
+        </a>
+        <p>Providing premium, simple, and high-converting websites for startups, creators, and local businesses worldwide. Build. Launch. Grow.</p>
+      </div>
+
+      <div class="footer-links-col">
+        <h4>Services Offered</h4>
+        <ul>
+          <li><a href="services.html">Website Development</a></li>
+          <li><a href="services.html">Website Redesign</a></li>
+          <li><a href="services.html">Performance Speedup</a></li>
+          <li><a href="services.html">Weekly Site Care</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links-col">
+        <h4>Legal Documents</h4>
+        <ul>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms & Conditions</a></li>
+          <li><a href="refund.html">Refund Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-newsletter">
+        <h4>Stay Updated</h4>
+        <p>Subscribe to our newsletter for simple online sales tips and search updates.</p>
+        <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed successfully!'); this.reset();">
+          <input type="email" placeholder="Your email address" required aria-label="Newsletter email input">
+          <button type="submit" class="btn btn-primary btn-sm"><i class="fas fa-envelope"></i></button>
+        </form>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© 2026 Zoryvex Studio. All Rights Reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================
+       FLOATING WHATSAPP BUTTON
+       ========================================== -->
+  <a href="https://wa.me/15559028822" class="floating-whatsapp" target="_blank" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- ==========================================
+       BACK TO TOP BUTTON
+       ========================================== -->
+  <button id="back-to-top" aria-label="Back To Top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- Core JavaScript -->
+  <script src="js/app.js"></script>
+  <!-- Terms Specific JavaScript (We reuse privacy.js since functionality is exactly identical!) -->
+  <script src="js/privacy.js"></script>
+</body>
+</html>

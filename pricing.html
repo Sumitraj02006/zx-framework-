@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zoryvex Studio | Beautiful, Fast & Professional Websites That Help Businesses Grow</title>
+  
+  <!-- SEO Metadata -->
+  <meta name="description" content="From local shops to modern startups, Zoryvex Studio creates premium, fast, and easy-to-understand websites that build trust, attract customers, and grow your business online. Get your free quote today!">
+  <meta name="keywords" content="digital agency, website builder, startup website, local business website, e-commerce storefront, personal branding, professional website design">
+  <meta name="author" content="Zoryvex Studio">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Zoryvex Studio | Professional Websites That Grow Your Business">
+  <meta property="og:description" content="Simple, beautiful, and transparent web design for startups, creators, and local businesses. No complex tech talk—just results.">
+  <meta property="og:image" content="images/hero-dashboard.png">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Zoryvex Studio | Professional Websites That Grow Your Business">
+  <meta property="twitter:description" content="Simple, beautiful, and transparent web design for startups, creators, and local businesses. No complex tech talk—just results.">
+  <meta property="twitter:image" content="images/hero-dashboard.png">
+
+  <!-- Icons & Fonts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="dark-theme">
+
+  <!-- ==========================================
+       PAGE LOADER
+       ========================================== -->
+  <div id="page-loader">
+    <div class="loader-spinner"></div>
+  </div>
+
+  <!-- ==========================================
+       HEADER & NAVIGATION
+       ========================================== -->
+  <header>
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="Zoryvex Studio Logo" class="logo-icon-img">
+        Zoryvex Studio
+      </a>
+      
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="process.html">Process</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li class="mobile-only-cta"><a href="contact.html" class="btn btn-primary">Get Free Quote</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-right">
+        
+
+        <!-- Light/Dark Toggle -->
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+          <i class="fas fa-sun sun-icon"></i>
+          <i class="fas fa-moon moon-icon"></i>
+        </button>
+
+        <!-- CTA Header Button -->
+        <a href="contact.html" class="btn btn-primary btn-sm">Get Free Quote</a>
+      </div>
+
+      <!-- Mobile Menu Toggle Button -->
+      <button id="mobile-menu-toggle" class="mobile-toggle" aria-label="Toggle Navigation Menu">
+        <span class="mobile-toggle-line"></span>
+        <span class="mobile-toggle-line"></span>
+        <span class="mobile-toggle-line"></span>
+      </button>
+    </div>
+  </header>
+
+  <main style="padding-top: 100px;">
+        <section class="calculator-section section" id="estimator">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge">Cost Estimator</span>
+          <h2>Interactive Project Cost Estimator</h2>
+          <p>Select your website needs below to calculate an estimated project budget range. Prices are optimized for the Indian market.</p>
+        </div>
+
+        <div class="calculator-card glass-card">
+          <div class="calculator-grid">
+            <div class="calc-options">
+              
+              <!-- Business Type -->
+              <div class="calc-group">
+                <label for="calc-biz-type">Your Business Type:</label>
+                <select id="calc-biz-type" class="calc-select">
+                  <option value="local" selected>🏪 Local Shop / Clinic / Salon</option>
+                  <option value="startup">🚀 Startup / SaaS / Tech</option>
+                  <option value="brand">👤 Creator / Freelancer / Personal Brand</option>
+                  <option value="ecommerce">🛒 E-Commerce / Online Store</option>
+                </select>
+              </div>
+
+              <!-- Website Type -->
+              <div class="calc-group">
+                <label for="calc-web-type">Website Category:</label>
+                <select id="calc-web-type" class="calc-select">
+                  <option value="basic" selected>Business Website (Standard)</option>
+                  <option value="dynamic">Dynamic Website (Admin Panel/Blog)</option>
+                  <option value="ecommerce">E-Commerce Website (Payment Gateway)</option>
+                  <option value="custom">Custom Web Application (Complex SaaS)</option>
+                </select>
+              </div>
+
+              <!-- Pages Range -->
+              <div class="calc-group">
+                <label for="calc-pages">Number of Pages: <span id="calc-pages-val">5</span></label>
+                <input type="range" id="calc-pages" class="calc-range" min="1" max="30" value="5">
+                <div class="calc-range-lbls">
+                  <span>1 Page</span>
+                  <span>30 Pages</span>
+                </div>
+              </div>
+
+              <!-- Design Preference -->
+              <div class="calc-group">
+                <label for="calc-design">Design Complexity:</label>
+                <select id="calc-design" class="calc-select">
+                  <option value="standard" selected>Standard Premium Layout (Fast & Clean)</option>
+                  <option value="custom">100% Custom Tailored UI/UX (Apple/Stripe Inspired)</option>
+                </select>
+              </div>
+
+              <!-- Features Checkboxes -->
+              <div class="calc-group">
+                <label>Choose Custom Features:</label>
+                <div class="calc-checkboxes">
+                  <label class="calc-checkbox-item">
+                    <input type="checkbox" class="calc-feature" data-price="999" checked>
+                    WhatsApp Chat Integration (+₹999)
+                  </label>
+                  <label class="calc-checkbox-item">
+                    <input type="checkbox" class="calc-feature" data-price="999" checked>
+                    Google Maps & Business Setup (+₹999)
+                  </label>
+                  <label class="calc-checkbox-item">
+                    <input type="checkbox" class="calc-feature" data-price="1999">
+                    Advanced Booking/Appointment System (+₹1,999)
+                  </label>
+                  <label class="calc-checkbox-item">
+                    <input type="checkbox" class="calc-feature" data-price="2999">
+                    Payment Gateway & Shopping Cart (+₹2,999)
+                  </label>
+                  <label class="calc-checkbox-item">
+                    <input type="checkbox" class="calc-feature" data-price="4999">
+                    SEO setup & Analytics package (+₹4,999)
+                  </label>
+                </div>
+              </div>
+
+              <!-- Hosting & Domain -->
+              <div class="calc-group">
+                <label for="calc-hosting">Hosting & Domain Setup:</label>
+                <select id="calc-hosting" class="calc-select">
+                  <option value="none">No Hosting needed (I have my own)</option>
+                  <option value="standard" selected>Starter Cloud Hosting + Domain (₹999/yr)</option>
+                  <option value="premium">Premium Business Cloud + Email (₹1,999/yr)</option>
+                </select>
+              </div>
+
+              <!-- Maintenance Plan -->
+              <div class="calc-group">
+                <label for="calc-maintenance">Website Maintenance:</label>
+                <select id="calc-maintenance" class="calc-select">
+                  <option value="none" selected>No Maintenance Care</option>
+                  <option value="standard">Standard Website Maintenance (₹999/month)</option>
+                  <option value="premium">Premium Speed & Security Care (₹1,999/month)</option>
+                </select>
+              </div>
+
+            </div>
+
+            <!-- Results box -->
+            <div class="calc-result-box">
+              <h3>Estimated Budget</h3>
+              <div id="calc-total-price" class="calc-price" style="font-size: 2.2rem;">₹8,000 – ₹15,000</div>
+              <p style="margin: 12px 0; line-height: 1.4;">This is only an estimated investment. Your final quotation will be shared after a free consultation.</p>
+              <br>
+              <a href="contact.html" class="btn btn-primary" style="width: 100%;">Get a Free Quote</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         OUR PROCESS FLOW SECTION
+         ========================================== -->
+    <section id="pricing" class="pricing section">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge">Pricing Estimations</span>
+          <h2>Transparent, Value-Driven Packages</h2>
+          <p>We believe in upfront transparency. Explore our website packages designed for startups, creators, and local shops in India.</p>
+        </div>
+
+        <!-- Premium Pricing Notice -->
+        <div class="glass-card" style="padding: 24px 32px; border-left: 4px solid var(--primary); margin-bottom: 48px; border-radius: var(--radius-md);">
+          <p style="font-size: 1rem; line-height: 1.6; font-weight: 500; color: var(--text-primary);">
+            ✨ <strong>Pricing Philosophy:</strong> Every business is different, so every website is different. The prices below are starting estimates. Your final quotation will be customized based on your business goals, required features, project complexity, timeline, and future scalability. We guarantee <strong>no hidden charges</strong> and offer a <strong>free consultation</strong> before providing any final quote.
+          </p>
+        </div>
+
+        <!-- Pricing Cards Grid -->
+        <div class="pricing-grid">
+          <!-- Starter Website -->
+          <div class="glass-card pricing-card">
+            <span class="badge" style="background: rgba(37,99,235,0.06); color: var(--primary); width: fit-content; margin-bottom: 8px;">Starting From</span>
+            <div class="price-tier">Starter Website</div>
+            <p style="font-size: 0.85rem; color: var(--text-tertiary); margin-bottom: 16px;">Best for Local Shops & Service Providers</p>
+            <div class="price-value">₹4,999</div>
+            <div class="price-period">Delivery: 3–5 Business Days</div>
+            
+            <ul class="pricing-features">
+              <li><i class="fas fa-check-circle"></i> Up to 5 Pages</li>
+              <li><i class="fas fa-check-circle"></i> Mobile Responsive Design</li>
+              <li><i class="fas fa-check-circle"></i> Contact/Inquiry Form</li>
+              <li><i class="fas fa-check-circle"></i> WhatsApp Chat Integration</li>
+              <li><i class="fas fa-check-circle"></i> Google Maps & Address</li>
+              <li><i class="fas fa-check-circle"></i> Social Media Profiles Link</li>
+              <li><i class="fas fa-check-circle"></i> Basic Google Search Setup</li>
+              <li><i class="fas fa-check-circle"></i> 1 Month Support</li>
+            </ul>
+
+            <a href="contact.html" class="btn btn-secondary">Request Custom Quote</a>
+          </div>
+
+          <!-- Business Website -->
+          <div class="glass-card pricing-card featured">
+            <span class="pricing-ribbon">⭐ Most Popular</span>
+            <span class="badge" style="background: rgba(37,99,235,0.06); color: var(--primary); width: fit-content; margin-bottom: 8px;">Starting From</span>
+            <div class="price-tier" style="color: var(--primary);">Business Website</div>
+            <p style="font-size: 0.85rem; color: var(--text-tertiary); margin-bottom: 16px;">Best for Startups, Coaches & Brands</p>
+            <div class="price-value">₹9,999</div>
+            <div class="price-period">Delivery: 5–7 Business Days</div>
+            
+            <ul class="pricing-features">
+              <li><i class="fas fa-check-circle"></i> Up to 10 Pages</li>
+              <li><i class="fas fa-check-circle"></i> Premium Custom UI/UX Layout</li>
+              <li><i class="fas fa-check-circle"></i> Interactive Blog Section</li>
+              <li><i class="fas fa-check-circle"></i> Gallery & Case Studies</li>
+              <li><i class="fas fa-check-circle"></i> Testimonial/Review Slider</li>
+              <li><i class="fas fa-check-circle"></i> Custom Inquiry Forms</li>
+              <li><i class="fas fa-check-circle"></i> WhatsApp & Google Analytics</li>
+              <li><i class="fas fa-check-circle"></i> Advanced SEO On-Page</li>
+              <li><i class="fas fa-check-circle"></i> Page Speed Optimization</li>
+              <li><i class="fas fa-check-circle"></i> 2 Months Support</li>
+            </ul>
+
+            <a href="contact.html" class="btn btn-primary">Request Custom Quote</a>
+          </div>
+
+          <!-- Professional Website -->
+          <div class="glass-card pricing-card">
+            <span class="badge" style="background: rgba(37,99,235,0.06); color: var(--primary); width: fit-content; margin-bottom: 8px;">Starting From</span>
+            <div class="price-tier">Professional Website</div>
+            <p style="font-size: 0.85rem; color: var(--text-tertiary); margin-bottom: 16px;">Best for Agencies & Educational Institutes</p>
+            <div class="price-value">₹19,999</div>
+            <div class="price-period">Delivery: 7–12 Business Days</div>
+            
+            <ul class="pricing-features">
+              <li><i class="fas fa-check-circle"></i> Unlimited Pages</li>
+              <li><i class="fas fa-check-circle"></i> 100% Unique Design Drafts</li>
+              <li><i class="fas fa-check-circle"></i> Content Management Admin Panel</li>
+              <li><i class="fas fa-check-circle"></i> Dynamic Portal / Database</li>
+              <li><i class="fas fa-check-circle"></i> Reservation / Booking Scheduler</li>
+              <li><i class="fas fa-check-circle"></i> Live Chatbot Integration</li>
+              <li><i class="fas fa-check-circle"></i> Advanced SEO & Google Schema</li>
+              <li><i class="fas fa-check-circle"></i> Premium Security Shield</li>
+              <li><i class="fas fa-check-circle"></i> Extreme Performance Engine</li>
+              <li><i class="fas fa-check-circle"></i> 3 Months Care Plan</li>
+            </ul>
+
+            <a href="contact.html" class="btn btn-secondary">Request Custom Quote</a>
+          </div>
+
+          <!-- E-Commerce Website -->
+          <div class="glass-card pricing-card">
+            <span class="badge" style="background: rgba(37,99,235,0.06); color: var(--primary); width: fit-content; margin-bottom: 8px;">Starting From</span>
+            <div class="price-tier">E-Commerce Website</div>
+            <p style="font-size: 0.85rem; color: var(--text-tertiary); margin-bottom: 16px;">Best for Stores & Product Brands</p>
+            <div class="price-value">₹29,999</div>
+            <div class="price-period">Delivery: 10–15 Business Days</div>
+            
+            <ul class="pricing-features">
+              <li><i class="fas fa-check-circle"></i> Complete Shopping Cart & Checkout</li>
+              <li><i class="fas fa-check-circle"></i> Unlimited Product Listings</li>
+              <li><i class="fas fa-check-circle"></i> Indian Payment Gateways (Razorpay/UPI)</li>
+              <li><i class="fas fa-check-circle"></i> Order & Customer Management</li>
+              <li><i class="fas fa-check-circle"></i> Secure Customer Registration & Login</li>
+              <li><i class="fas fa-check-circle"></i> Dynamic Coupon & Discount Code system</li>
+              <li><i class="fas fa-check-circle"></i> GST-Ready Invoicing</li>
+              <li><i class="fas fa-check-circle"></i> Live Shipping Rate Integrations</li>
+              <li><i class="fas fa-check-circle"></i> 3 Months Maintenance support</li>
+            </ul>
+
+            <a href="contact.html" class="btn btn-secondary">Request Custom Quote</a>
+          </div>
+        </div>
+
+        <!-- Additional Services Section -->
+        <div style="margin-top: 80px;">
+          <div class="section-header" style="margin-bottom: 40px;">
+            <span class="badge">Add-ons</span>
+            <h3>Additional Web Services</h3>
+            <p>Customize your project by selecting extra enhancements with flat starting prices.</p>
+          </div>
+          
+          <div class="glass-card" style="overflow-x: auto; padding: 24px; border-radius: var(--radius-md);">
+            <table style="width: 100%; border-collapse: collapse; min-width: 500px; text-align: left;">
+              <thead>
+                <tr style="border-bottom: 2px solid var(--border-color); color: var(--text-primary); font-family: var(--font-heading); font-weight: 600;">
+                  <th style="padding: 12px 16px;">Service Name</th>
+                  <th style="padding: 12px 16px; text-align: right;">Starting Price (₹)</th>
+                </tr>
+              </thead>
+              <tbody style="font-size: 0.95rem; color: var(--text-secondary);">
+                <tr style="border-bottom: 1px solid var(--border-color);">
+                  <td style="padding: 12px 16px; font-weight: 500; color: var(--text-primary);">Single Landing Page</td>
+                  <td style="padding: 12px 16px; text-align: right; font-weight: 600; color: var(--primary);">₹2,999</td>
+                </tr>
+                <tr style="border-bottom: 1px solid var(--border-color);">
+                  <td style="padding: 12px 16px; font-weight: 500; color: var(--text-primary);">Complete Website Redesign</td>
+                  <td style="padding: 12px 16px; text-align: right; font-weight: 600; color: var(--primary);">₹4,999</td>
+                </tr>
+                <tr style="border-bottom: 1px solid var(--border-color);">
+                  <td style="padding: 12px 16px; font-weight: 500; color: var(--text-primary);">Website Maintenance & Updates</td>
+                  <td style="padding: 12px 16px; text-align: right; font-weight: 600; color: var(--primary);">₹999 / month</td>
+                </tr>
+                <tr style="border-bottom: 1px solid var(--border-color);">
+                  <td style="padding: 12px 16px; font-weight: 500; color: var(--text-primary);">Speed Optimization & Score Cleanup</td>
+                  <td style="padding: 12px 16px; text-align: right; font-weight: 600; color: var(--primary);">₹2,999</td>
+                </tr>
+                <tr style="border-bottom: 1px solid var(--border-color);">
+                  <td style="padding: 12px 16px; font-weight: 500; color: var(--text-primary);">Website Bug Fix & Code Repair</td>
+                  <td style="padding: 12px 16px; text-align: right; font-weight: 600; color: var(--primary);">₹999</td>
+                </tr>
+                <tr style="border-bottom: 1px solid var(--border-color);">
+                  <td style="padding: 12px 16px; font-weight: 500; color: var(--text-primary);">Hosting Configuration</td>
+                  <td style="padding: 12px 16px; text-align: right; font-weight: 600; color: var(--primary);">₹1,999</td>
+                </tr>
+                <tr style="border-bottom: 1px solid var(--border-color);">
+                  <td style="padding: 12px 16px; font-weight: 500; color: var(--text-primary);">SSL Installation & Domain Setup</td>
+                  <td style="padding: 12px 16px; text-align: right; font-weight: 600; color: var(--primary);">₹999 each</td>
+                </tr>
+                <tr style="border-bottom: 1px solid var(--border-color);">
+                  <td style="padding: 12px 16px; font-weight: 500; color: var(--text-primary);">Professional Business Emails (setup)</td>
+                  <td style="padding: 12px 16px; text-align: right; font-weight: 600; color: var(--primary);">₹999</td>
+                </tr>
+                <tr style="border-bottom: 1px solid var(--border-color);">
+                  <td style="padding: 12px 16px; font-weight: 500; color: var(--text-primary);">Website Platform Migration</td>
+                  <td style="padding: 12px 16px; text-align: right; font-weight: 600; color: var(--primary);">₹2,999</td>
+                </tr>
+                <tr style="border-bottom: 1px solid var(--border-color);">
+                  <td style="padding: 12px 16px; font-weight: 500; color: var(--text-primary);">Ongoing SEO Marketing Pack</td>
+                  <td style="padding: 12px 16px; text-align: right; font-weight: 600; color: var(--primary);">₹4,999 / month</td>
+                </tr>
+                <tr style="border-bottom: 1px solid var(--border-color);">
+                  <td style="padding: 12px 16px; font-weight: 500; color: var(--text-primary);">Google Business Profile Setup & Optimization</td>
+                  <td style="padding: 12px 16px; text-align: right; font-weight: 600; color: var(--primary);">₹2,999</td>
+                </tr>
+                <tr style="border-bottom: 1px solid var(--border-color);">
+                  <td style="padding: 12px 16px; font-weight: 500; color: var(--text-primary);">Shopify Store Setup</td>
+                  <td style="padding: 12px 16px; text-align: right; font-weight: 600; color: var(--primary);">₹9,999</td>
+                </tr>
+                <tr>
+                  <td style="padding: 12px 16px; font-weight: 500; color: var(--text-primary);">WooCommerce Shopping Cart Setup</td>
+                  <td style="padding: 12px 16px; text-align: right; font-weight: 600; color: var(--primary);">₹4,999</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- How Price is Calculated Section -->
+        <div style="margin-top: 80px;">
+          <div class="section-header" style="margin-bottom: 40px;">
+            <span class="badge">Factors</span>
+            <h3>How Your Final Price Is Calculated</h3>
+            <p>Every proposal is tailored specifically to your project requirements. You only pay for the features your business actually needs.</p>
+          </div>
+          
+          <div class="why-grid">
+            <div class="glass-card why-card">
+              <div class="why-icon-sm"><i class="fas fa-store"></i></div>
+              <h3>Business & Website Type</h3>
+              <p>Estimates depend on whether you are a local storefront, a SaaS startup, or a product fashion line.</p>
+            </div>
+            <div class="glass-card why-card">
+              <div class="why-icon-sm"><i class="fas fa-file-alt"></i></div>
+              <h3>Website Size (Pages)</h3>
+              <p>A simple 5-page setup has a different structural complexity compared to a massive 20-page portal.</p>
+            </div>
+            <div class="glass-card why-card">
+              <div class="why-icon-sm"><i class="fas fa-puzzle-piece"></i></div>
+              <h3>Custom Enhancements</h3>
+              <p>Integrating features like checkout gateways, calendars, customized admin dashboards, and dynamic databases.</p>
+            </div>
+            <div class="glass-card why-card">
+              <div class="why-icon-sm"><i class="fas fa-server"></i></div>
+              <h3>Hosting, Domain & SEO</h3>
+              <p>Choosing proper hosting servers, custom business email setups, and detailed local SEO requirements.</p>
+            </div>
+            <div class="glass-card why-card">
+              <div class="why-icon-sm"><i class="fas fa-clock"></i></div>
+              <h3>Launch Timeline</h3>
+              <p>Urgent schedules requiring rush setups (3-5 days) have additional speed allocations.</p>
+            </div>
+            <div class="glass-card why-card">
+              <div class="why-icon-sm"><i class="fas fa-shield-alt"></i></div>
+              <h3>Maintenance & Growth</h3>
+              <p>Weekly file backups, security updates, and future page scalability expansions.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Why Custom Pricing Section -->
+        <div style="margin-top: 80px;">
+          <div class="section-header" style="margin-bottom: 40px;">
+            <span class="badge">Value Alignment</span>
+            <h3>Why Zoryvex Studio Uses Custom Pricing</h3>
+            <p>Standard fixed rates force clients to pay for features they don't use. We design custom proposals to fit your specific operations and budget constraints.</p>
+          </div>
+
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px;">
+            <div class="glass-card" style="padding: 24px;">
+              <h4 style="margin-bottom: 12px; color: var(--text-primary);"><i class="fas fa-shopping-basket" style="color: var(--primary); margin-right: 8px;"></i> Local Grocery Shop</h4>
+              <p style="font-size: 0.9rem;">Requires a simple 5-page site containing location maps, basic SEO, and WhatsApp ordering. Clean, affordable, and fast.</p>
+            </div>
+            <div class="glass-card" style="padding: 24px;">
+              <h4 style="margin-bottom: 12px; color: var(--text-primary);"><i class="fas fa-graduation-cap" style="color: var(--primary); margin-right: 8px;"></i> Coaching Institutes</h4>
+              <p style="font-size: 0.9rem;">Needs inquiry admission forms, course catalogs, student query registers, and dynamic blog schedules.</p>
+            </div>
+            <div class="glass-card" style="padding: 24px;">
+              <h4 style="margin-bottom: 12px; color: var(--text-primary);"><i class="fas fa-pizza-slice" style="color: var(--primary); margin-right: 8px;"></i> Restaurants & Cafes</h4>
+              <p style="font-size: 0.9rem;">Requires an attractive digital food menu, table reservation systems, Google Review links, and social integrations.</p>
+            </div>
+            <div class="glass-card" style="padding: 24px;">
+              <h4 style="margin-bottom: 12px; color: var(--text-primary);"><i class="fas fa-rocket" style="color: var(--primary); margin-right: 8px;"></i> SaaS & Tech Startups</h4>
+              <p style="font-size: 0.9rem;">Needs interactive product cards, lead collection fields, payment integration, and highly scalable code architecture.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Premium Free Consultation Banner -->
+        <div class="glass-card" style="margin-top: 80px; padding: 48px; text-align: center; background: var(--mixed-gradient-glow);">
+          <span class="badge">100% Free Consultation</span>
+          <h3 style="font-size: 1.8rem; margin-bottom: 16px;">Get a Free Website Consultation</h3>
+          <p style="max-width: 600px; margin: 0 auto 28px auto; font-size: 1rem; color: var(--text-secondary);">
+            Sit down with our web design experts. We will discuss your business operations, suggest target features, draft basic timelines, and prepare a custom layout proposal.
+          </p>
+          <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+            <button class="btn btn-accent open-booking-trigger"><i class="far fa-calendar-alt"></i> Book Free Consultation</button>
+            <a href="contact.html" class="btn btn-secondary">Get My Custom Quote</a>
+          </div>
+          <p style="margin-top: 16px; font-size: 0.8rem; font-weight: 600; color: var(--text-tertiary);">
+            100% Free • No Hidden Charges • No Obligation
+          </p>
+        </div>
+
+        <!-- Trust Badges Row -->
+        <div style="margin-top: 48px; display: flex; justify-content: center; gap: 32px; flex-wrap: wrap; text-align: center; border-top: 1px solid var(--border-color); padding-top: 32px;">
+          <span style="font-size: 0.85rem; font-weight: 600; color: var(--text-secondary);"><i class="fas fa-shield-alt" style="color: var(--accent); margin-right: 6px;"></i> No Hidden Charges</span>
+          <span style="font-size: 0.85rem; font-weight: 600; color: var(--text-secondary);"><i class="fas fa-credit-card" style="color: var(--accent); margin-right: 6px;"></i> Secure Payments</span>
+          <span style="font-size: 0.85rem; font-weight: 600; color: var(--text-secondary);"><i class="fas fa-comments-dollar" style="color: var(--accent); margin-right: 6px;"></i> Free Consultation</span>
+          <span style="font-size: 0.85rem; font-weight: 600; color: var(--text-secondary);"><i class="fas fa-clipboard-check" style="color: var(--accent); margin-right: 6px;"></i> Transparent Pricing</span>
+        </div>
+
+        <!-- Pricing Disclaimer -->
+        <div style="margin-top: 60px; text-align: center; border-top: 1px solid var(--border-color); padding-top: 30px;">
+          <h4 style="font-size: 1.1rem; color: var(--text-primary); margin-bottom: 8px;">Pricing Transparency Disclaimer</h4>
+          <p style="max-width: 800px; margin: 0 auto; font-size: 0.825rem; color: var(--text-tertiary); line-height: 1.5;">
+            The prices shown on this website are starting prices only. Your final quotation depends on: Business Type, Required Features, Website Size, Design Complexity, Third-Party Integrations, Content Availability, Timeline, Hosting Requirements, and Future Expansion. Every quotation is individually prepared after understanding your project to ensure you receive the best value for your investment. No hidden charges. No unnecessary upselling. Transparent pricing.
+          </p>
+        </div>
+
+        <!-- Let's Build Something Amazing CTA -->
+        <div style="margin-top: 80px; text-align: center; background: var(--bg-secondary); padding: 40px; border-radius: var(--radius-lg); border: 1px solid var(--border-color);">
+          <h3 style="font-size: 1.75rem; margin-bottom: 12px;">Let's Build Something Amazing Together</h3>
+          <p style="max-width: 600px; margin: 0 auto 24px auto; font-size: 0.95rem;">
+            Whether you're a local shop, startup, restaurant, coaching institute, clinic, freelancer, or growing business, Zoryvex Studio will recommend the right solution based on your goals and budget.
+          </p>
+          <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+            <a href="contact.html" class="btn btn-primary">Get My Free Quote</a>
+            <button class="btn btn-accent open-booking-trigger">Book a Free Consultation</button>
+            <a href="contact.html" class="btn btn-secondary">Talk to a Website Expert</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================
+         CLIENT DASHBOARD & PROGRESS TRACKER
+         ========================================== -->
+    <section class="client-dashboard section">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge">Client Dashboard</span>
+          <h2>Track Your Website Development</h2>
+          <p>We value transparency. Enter your project code below to track milestones, invoices, and design drafts in real time.</p>
+        </div>
+
+        <div class="dashboard-card glass-card">
+          
+          <!-- Login View -->
+          <div id="dashboard-login" class="dashboard-login-box">
+            <div class="dashboard-input-group">
+              <label for="dashboard-code-input">Enter Project Tracker Code:</label>
+              <input type="text" id="dashboard-code-input" placeholder="e.g. BF-STARTUP-99" value="BF-STARTUP-99">
+            </div>
+            <button id="login-dashboard-btn" class="btn btn-primary">Log Into Dashboard</button>
+            <div>
+              <span class="dashboard-demo-tip">💡 Demo Codes: <strong>BF-STARTUP-99</strong> (Startup template) or <strong>BF-SHOP-12</strong> (Cafe template)</span>
+            </div>
+          </div>
+
+          <!-- Active Dashboard View -->
+          <div id="dashboard-view" class="dashboard-view-box">
+            <div class="dashboard-view-header">
+              <div class="dashboard-client-info">
+                <h3 id="dash-client-name">CloudFlow AI</h3>
+                <p id="dash-project-name">Premium SaaS Website Integration</p>
+              </div>
+              <div class="badge">Development Stage</div>
+            </div>
+
+            <!-- Progress Tracker -->
+            <div class="tracker-container">
+              <div class="tracker-title">
+                <span>Progress Checklist:</span>
+                <span id="dash-progress-lbl">75%</span>
+              </div>
+              <div class="tracker-bar-bg">
+                <div id="dash-progress-bar" class="tracker-bar-fill"></div>
+              </div>
+
+              <!-- Step indicators -->
+              <div class="tracker-steps">
+                <div class="tracker-step-node" data-step="1">
+                  <div class="tracker-step-dot"></div>
+                  <span>Consult</span>
+                </div>
+                <div class="tracker-step-node" data-step="3">
+                  <div class="tracker-step-dot"></div>
+                  <span>Design</span>
+                </div>
+                <div class="tracker-step-node" data-step="5">
+                  <div class="tracker-step-dot"></div>
+                  <span>Code</span>
+                </div>
+                <div class="tracker-step-node" data-step="6">
+                  <div class="tracker-step-dot"></div>
+                  <span>Testing</span>
+                </div>
+                <div class="tracker-step-node" data-step="7">
+                  <div class="tracker-step-dot"></div>
+                  <span>Launch</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Details Split -->
+            <div class="dashboard-details-grid">
+              
+              <!-- Milestones Checklist -->
+              <div class="dashboard-panel">
+                <h4>Completed milestones</h4>
+                <div id="dash-milestones" class="dashboard-milestones-list">
+                  <!-- Injected via JS -->
+                </div>
+              </div>
+
+              <!-- Shared Resources -->
+              <div class="dashboard-panel">
+                <h4>Project resources</h4>
+                <div id="dash-links" class="dashboard-links-list">
+                  <!-- Injected via JS -->
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         TESTIMONIALS SECTION
+         ========================================== -->
+    <section class="testimonials section">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge">Testimonials</span>
+          <h2>What Business Owners Say</h2>
+          <p>Read honest reviews from local business owners, startups, and creators we've helped launch online.</p>
+        </div>
+
+        <div class="testimonials-slider-container">
+          <div id="testimonials-track" class="testimonials-track">
+            
+            <!-- Slide 1 -->
+            <div class="glass-card testimonial-slide">
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="testimonial-text">"I didn't know anything about code or domains. Zoryvex Studio explained everything in simple terms and launched my salon website in just 10 days! Local bookings have surged."</p>
+              <div class="testimonial-user">
+                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=100&h=100" class="testimonial-avatar" alt="Avatar of Emma Watson">
+                <div class="testimonial-user-info">
+                  <h4>Emma Watson</h4>
+                  <p>Owner, Bloom Salon & Spa</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="glass-card testimonial-slide">
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="testimonial-text">"As a startup founder, speed is everything. The Zoryvex Studio team delivered our SaaS landing page ahead of schedule, optimized page speed, and generated 1000+ early-bird signups."</p>
+              <div class="testimonial-user">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=100&h=100" class="testimonial-avatar" alt="Avatar of Marcus Chen">
+                <div class="testimonial-user-info">
+                  <h4>Marcus Chen</h4>
+                  <p>Co-Founder, CloudFlow AI</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="glass-card testimonial-slide">
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="testimonial-text">"My online store checkout flow was confusing for customers. Zoryvex Studio redesigned the pages, and my checkout drop-off rate dropped from 75% to 40% in two weeks!"</p>
+              <div class="testimonial-user">
+                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=100&h=100" class="testimonial-avatar" alt="Avatar of Sarah Jenkins">
+                <div class="testimonial-user-info">
+                  <h4>Sarah Jenkins</h4>
+                  <p>Founder, Loom & Thread</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Slider Nav Controls -->
+          <div class="slider-nav">
+            <button id="slider-prev" class="slider-btn" aria-label="Previous Testimonial"><i class="fas fa-chevron-left"></i></button>
+            <button id="slider-next" class="slider-btn" aria-label="Next Testimonial"><i class="fas fa-chevron-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         FAQ SECTION
+         ========================================== -->
+        <div id="booking-modal" class="modal" aria-hidden="true" role="dialog">
+      <div class="modal-content" style="max-width: 520px;">
+        <div class="modal-header">
+          <h3>Schedule Consultation</h3>
+          <span id="close-booking-modal" class="close-modal">&times;</span>
+        </div>
+        <div class="modal-body">
+          <div class="calendar-widget">
+            <div class="calendar-header">
+              <h4 id="cal-month-title">Month Year</h4>
+            </div>
+            
+            <!-- Calendar Days Header -->
+            <div class="calendar-grid">
+              <div class="calendar-day-header">Su</div>
+              <div class="calendar-day-header">Mo</div>
+              <div class="calendar-day-header">Tu</div>
+              <div class="calendar-day-header">We</div>
+              <div class="calendar-day-header">Th</div>
+              <div class="calendar-day-header">Fr</div>
+              <div class="calendar-day-header">Sa</div>
+            </div>
+
+            <!-- Injected Calendar Days -->
+            <div id="cal-days-grid" class="calendar-grid"></div>
+            
+            <!-- Injected Time slots -->
+            <h4 style="margin-top: 16px;">Available Times (EST):</h4>
+            <div id="time-slots-container" class="time-slots">
+              <p style="font-size: 0.85rem; color: var(--text-tertiary);">Select a date above to display available slots.</p>
+            </div>
+
+            <button id="confirm-booking-btn" class="btn btn-accent" style="width: 100%; margin-top: 24px;">Confirm Call Slot</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+  
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <img src="images/logo.png" alt="Zoryvex Studio Logo" class="logo-icon-img">
+          Zoryvex Studio
+        </a>
+        <p>Providing premium, simple, and high-converting websites for startups, creators, and local businesses worldwide. Build. Launch. Grow.</p>
+      </div>
+
+      <div class="footer-links-col">
+        <h4>Services Offered</h4>
+        <ul>
+          <li><a href="services.html">Website Development</a></li>
+          <li><a href="services.html">Website Redesign</a></li>
+          <li><a href="services.html">Performance Speedup</a></li>
+          <li><a href="services.html">Weekly Site Care</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links-col">
+        <h4>Legal Documents</h4>
+        <ul>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms & Conditions</a></li>
+          <li><a href="refund.html">Refund Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-newsletter">
+        <h4>Stay Updated</h4>
+        <p>Subscribe to our newsletter for simple online sales tips and search updates.</p>
+        <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed successfully!'); this.reset();">
+          <input type="email" placeholder="Your email address" required aria-label="Newsletter email input">
+          <button type="submit" class="btn btn-primary btn-sm"><i class="fas fa-envelope"></i></button>
+        </form>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© 2026 Zoryvex Studio. All Rights Reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  
+
+  <!-- ==========================================
+       FLOATING WHATSAPP BUTTON
+       ========================================== -->
+  <a href="https://wa.me/15559028822" class="floating-whatsapp" target="_blank" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- ==========================================
+       BACK TO TOP BUTTON
+       ========================================== -->
+  <button id="back-to-top" aria-label="Back To Top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- ==========================================
+       LIVE CHAT WIDGET
+       ========================================== -->
+  <div class="live-chat-widget">
+    <button id="chat-toggle" class="chat-toggle-btn" aria-label="Open Help Chat">
+      <i class="far fa-comments"></i>
+    </button>
+    
+    <div id="chat-box" class="chat-box glass-card">
+      <div class="chat-header">
+        <h4>Zoryvex Studio Helper</h4>
+        <span id="close-chat" class="close-chat">&times;</span>
+      </div>
+      
+      <div id="chat-messages" class="chat-messages">
+        <div class="chat-msg bot">
+          Hey there! 👋 Welcome to Zoryvex Studio. How can we help grow your business online today?
+        </div>
+      </div>
+
+      <div class="chat-input-area">
+        <input type="text" id="chat-input" placeholder="Type a message..." aria-label="Chat input message">
+        <button id="chat-send" class="chat-send-btn" aria-label="Send message"><i class="fas fa-paper-plane"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       COOKIE CONSENT BANNER
+       ========================================== -->
+  <div id="cookie-banner" class="cookie-banner glass-card">
+    <h4>Cookie Consent</h4>
+    <p>We use cookies to improve page loading speeds and analyze website traffic performance. By clicking Accept, you agree to our policies.</p>
+    <div class="cookie-buttons">
+      <button id="accept-cookies" class="btn btn-accent btn-sm">Accept All</button>
+      <button id="decline-cookies" class="btn btn-secondary btn-sm">Decline</button>
+    </div>
+  </div>
+
+  <!-- Core JavaScript -->
+  <script src="js/app.js"></script>
+</body>
+</html>
