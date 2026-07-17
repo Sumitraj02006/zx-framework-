@@ -155,8 +155,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const statsElements = document.querySelectorAll('.stat-num');
   if (statsElements.length > 0) {
     const animateStats = (el) => {
-      const target = parseFloat(el.getAttribute('data-target'));
+      const targetAttr = el.getAttribute('data-target');
+      const target = parseFloat(targetAttr);
       const suffix = el.getAttribute('data-suffix') || '';
+      if (isNaN(target)) {
+        el.innerText = targetAttr + suffix;
+        return;
+      }
       let current = 0;
       const duration = 1500; // ms
       const stepTime = 15;
