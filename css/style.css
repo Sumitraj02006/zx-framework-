@@ -1575,8 +1575,8 @@ header.mobile-active .mobile-toggle-line:nth-child(3) {
 
 .testimonial-slide {
   flex: 0 0 calc(50% - 12px);
-  min-width: 280px;
-  padding: 32px;
+  min-width: min(100%, 280px);
+  padding: clamp(16px, 4vw, 32px);
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -2609,33 +2609,66 @@ textarea:focus-visible {
   }
 }
 
-/* --- ULTRA-WIDE & 4K DISPLAY ENHANCEMENTS (2000px+) --- */
+/* --- ULTRA-WIDE, 4K & 5K DISPLAY ENHANCEMENTS (2000px - 5120px) --- */
 @media (min-width: 2000px) {
   .container {
     max-width: 1600px;
   }
   .hero-content h1 {
-    font-size: clamp(3.5rem, 5vw, 5.5rem);
+    font-size: clamp(3.5rem, 4.5vw, 5.5rem);
   }
   .section-header h2 {
     font-size: clamp(2.5rem, 3.5vw, 4rem);
   }
 }
+@media (min-width: 2880px) {
+  .container {
+    max-width: 1800px;
+  }
+  body {
+    font-size: 1.15rem;
+  }
+}
 
-/* --- SMALL MOBILE SAFETY OVERFLOW FIX (<= 340px) --- */
+/* --- ULTRA-COMPACT & MICRO DEVICE BREAKPOINTS (240px - 340px) --- */
 @media (max-width: 340px) {
   .container {
-    padding: 0 12px;
+    padding: 0 10px;
+  }
+  h1, h2, h3, h4, .logo {
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+  .logo {
+    font-size: 1.1rem;
+    gap: 6px;
+  }
+  .logo-icon-img {
+    width: 28px;
+    height: 28px;
+  }
+  .hero-content h1 {
+    font-size: clamp(1.5rem, 7vw, 2.2rem);
+  }
+  .section-header h2 {
+    font-size: clamp(1.3rem, 6vw, 1.8rem);
   }
   .hero-btns {
     flex-direction: column;
     width: 100%;
+    gap: 10px;
   }
   .hero-btns .btn {
     width: 100%;
     text-align: center;
+    padding: 10px 14px;
+    font-size: 0.85rem;
   }
-  .trust-stats {
+  .trust-stats, .stats-panel {
     grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .portfolio-card, .glass-card, .service-card, .blog-card {
+    padding: 16px;
   }
 }
