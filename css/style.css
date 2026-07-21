@@ -1734,10 +1734,19 @@ header.mobile-active .mobile-toggle-line:nth-child(3) {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   font-weight: 600;
   color: var(--text-primary);
   text-align: left;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  font-family: inherit;
+  user-select: none;
+}
+.faq-question * {
+  pointer-events: none;
 }
 
 .faq-icon-arrow {
