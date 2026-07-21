@@ -663,32 +663,18 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // ==========================================
-  // 13. FAQ ACCORDION
+  // 13. FAQ ACCORDION (NATIVE DETAILS & SUMMARY)
   // ==========================================
-  window.toggleFaqItem = function(trigger) {
-    const item = trigger.closest('.faq-item');
-    if (!item) return;
-    const answer = item.querySelector('.faq-answer');
-    const isActive = item.classList.contains('active');
-
-    // Close all other active FAQ items
-    document.querySelectorAll('.faq-item').forEach(otherItem => {
-      otherItem.classList.remove('active');
-      const otherAns = otherItem.querySelector('.faq-answer');
-      if (otherAns) otherAns.style.maxHeight = null;
-    });
-
-    if (!isActive && answer) {
-      item.classList.add('active');
-      answer.style.maxHeight = (answer.scrollHeight + 50) + 'px';
-    }
-  };
-
-  const faqQuestions = document.querySelectorAll('.faq-question');
-  faqQuestions.forEach(question => {
-    question.addEventListener('click', function(e) {
-      e.preventDefault();
-      window.toggleFaqItem(this);
+  const faqDetails = document.querySelectorAll('details.faq-item');
+  faqDetails.forEach(targetDetail => {
+    targetDetail.addEventListener('toggle', () => {
+      if (targetDetail.open) {
+        faqDetails.forEach(detail => {
+          if (detail !== targetDetail) {
+            detail.removeAttribute('open');
+          }
+        });
+      }
     });
   });
 
