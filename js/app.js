@@ -964,4 +964,99 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // ==========================================
+  // 15. BLOG ARTICLE MODAL LOGIC
+  // ==========================================
+  const blogModal = document.getElementById('blog-article-modal');
+  const closeBlogModalBtn = document.getElementById('close-blog-modal');
+  const readMoreBtns = document.querySelectorAll('.blog-read-more');
+
+  const articlesData = {
+    1: {
+      meta: "July 2, 2026 • 4 min read",
+      title: "5 Simple Steps to Rank Your Local Shop on Google Search",
+      img: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800&h=400",
+      content: `
+        <p style="margin-bottom: 16px;">Want local customers in your city to find your shop, clinic, salon, or storefront? Having a website is only half the battle — people need to discover it when searching online.</p>
+        <h3 style="color: var(--text-primary); margin: 20px 0 10px 0;">1. Claim Your Free Google Business Profile</h3>
+        <p style="margin-bottom: 16px;">Verify your business address on Google Maps. Add your exact phone number, business hours, storefront photos, and website link.</p>
+        <h3 style="color: var(--text-primary); margin: 20px 0 10px 0;">2. Use Local Keyword Phrases</h3>
+        <p style="margin-bottom: 16px;">Target localized search terms like "best cafe near me" or "hair salon in Patna" rather than generic words.</p>
+        <h3 style="color: var(--text-primary); margin: 20px 0 10px 0;">3. Collect Authentic Customer Reviews</h3>
+        <p style="margin-bottom: 16px;">Encourage satisfied customers to leave 5-star reviews on Google Maps. High ratings build trust and boost local search rankings.</p>
+        <h3 style="color: var(--text-primary); margin: 20px 0 10px 0;">4. Ensure 100% Mobile Speed Optimization</h3>
+        <p style="margin-bottom: 16px;">Over 80% of local searches happen on mobile phones. Make sure your website loads in under 2 seconds without lag.</p>
+        <div style="background: rgba(37,99,235,0.08); border-left: 4px solid var(--primary); padding: 16px 20px; margin-top: 24px; border-radius: var(--radius-sm);">
+          <strong style="color: var(--text-primary);">💡 Pro Tip:</strong> Local SEO brings high-converting, ready-to-buy customers to your store. Contact Zoryvex Studio for expert setup!
+        </div>
+      `
+    },
+    2: {
+      meta: "June 28, 2026 • 5 min read",
+      title: "Why Slow Web Pages Kill Your Sales (And How to Fix It)",
+      img: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800&h=400",
+      content: `
+        <p style="margin-bottom: 16px;">If your website takes more than 3 seconds to load, over 53% of mobile visitors leave before even seeing your products. Page speed is directly tied to your revenue!</p>
+        <h3 style="color: var(--text-primary); margin: 20px 0 10px 0;">1. Compress Large Image Files</h3>
+        <p style="margin-bottom: 16px;">Raw camera images can be 5MB+. Compress them to WebP or JPEG format under 150KB without quality loss.</p>
+        <h3 style="color: var(--text-primary); margin: 20px 0 10px 0;">2. Use Fast Cloud Servers</h3>
+        <p style="margin-bottom: 16px;">Shared slow hosting causes server delays. Utilize fast CDN networks and optimized hosting environments.</p>
+        <h3 style="color: var(--text-primary); margin: 20px 0 10px 0;">3. Eliminate Unused Scripts</h3>
+        <p style="margin-bottom: 16px;">Remove heavy unused plugins, tracking scripts, and bloated frameworks that slow down rendering.</p>
+        <div style="background: rgba(37,99,235,0.08); border-left: 4px solid var(--primary); padding: 16px 20px; margin-top: 24px; border-radius: var(--radius-sm);">
+          <strong style="color: var(--text-primary);">⚡ Speed Guarantee:</strong> Zoryvex Studio builds websites that score 90+ on Google PageSpeed Insights.
+        </div>
+      `
+    },
+    3: {
+      meta: "June 20, 2026 • 3 min read",
+      title: "First Time Buying a Website? Here is What You Actually Need",
+      img: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&q=80&w=800&h=400",
+      content: `
+        <p style="margin-bottom: 16px;">First-time business owners often overpay for unnecessary add-ons when launching their first website. Here is what you actually need to start strong.</p>
+        <h3 style="color: var(--text-primary); margin: 20px 0 10px 0;">1. Clean Custom Domain Name</h3>
+        <p style="margin-bottom: 16px;">Choose a short, memorable .com or .in domain name that represents your brand clearly.</p>
+        <h3 style="color: var(--text-primary); margin: 20px 0 10px 0;">2. Clear Call-To-Action (CTA)</h3>
+        <p style="margin-bottom: 16px;">Ensure visitors can easily click a WhatsApp chat button or call your team with a single tap.</p>
+        <h3 style="color: var(--text-primary); margin: 20px 0 10px 0;">3. Mobile-First Responsive Design</h3>
+        <p style="margin-bottom: 16px;">Your site must look clean and modern on every mobile device screen.</p>
+        <div style="background: rgba(37,99,235,0.08); border-left: 4px solid var(--primary); padding: 16px 20px; margin-top: 24px; border-radius: var(--radius-sm);">
+          <strong style="color: var(--text-primary);">🎯 Starter Package:</strong> Get online for ₹4,999 with our transparent Starter Website package.
+        </div>
+      `
+    }
+  };
+
+  readMoreBtns.forEach((btn, index) => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const articleId = index + 1;
+      const data = articlesData[articleId] || articlesData[1];
+      if (data && blogModal) {
+        document.getElementById('modal-blog-meta').textContent = data.meta;
+        document.getElementById('modal-blog-title').textContent = data.title;
+        document.getElementById('modal-blog-img').src = data.img;
+        document.getElementById('modal-blog-content').innerHTML = data.content;
+        blogModal.classList.add('active');
+        blogModal.setAttribute('aria-hidden', 'false');
+        document.body.classList.add('no-scroll');
+      }
+    });
+  });
+
+  if (closeBlogModalBtn && blogModal) {
+    closeBlogModalBtn.addEventListener('click', () => {
+      blogModal.classList.remove('active');
+      blogModal.setAttribute('aria-hidden', 'true');
+      document.body.classList.remove('no-scroll');
+    });
+    blogModal.addEventListener('click', (e) => {
+      if (e.target === blogModal) {
+        blogModal.classList.remove('active');
+        blogModal.setAttribute('aria-hidden', 'true');
+        document.body.classList.remove('no-scroll');
+      }
+    });
+  }
+
 });
