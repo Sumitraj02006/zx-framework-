@@ -665,29 +665,31 @@ document.addEventListener('DOMContentLoaded', () => {
   // ==========================================
   // 13. FAQ ACCORDION
   // ==========================================
-  const faqItems = document.querySelectorAll('.faq-item');
-  faqItems.forEach(item => {
-    const question = item.querySelector('.faq-question');
+  window.toggleFaqItem = function(trigger) {
+    const item = trigger.closest('.faq-item');
+    if (!item) return;
     const answer = item.querySelector('.faq-answer');
+    const isActive = item.classList.contains('active');
 
-    if (question && answer) {
-      question.addEventListener('click', (e) => {
-        e.preventDefault();
-        const isActive = item.classList.contains('active');
-        
-        // Close other FAQs
-        faqItems.forEach(otherItem => {
-          const otherAns = otherItem.querySelector('.faq-answer');
-          otherItem.classList.remove('active');
-          if (otherAns) otherAns.style.maxHeight = null;
-        });
+    // Close all other active FAQ items
+    document.querySelectorAll('.faq-item').forEach(otherItem => {
+      otherItem.classList.remove('active');
+      const otherAns = otherItem.querySelector('.faq-answer');
+      if (otherAns) otherAns.style.maxHeight = null;
+    });
 
-        if (!isActive) {
-          item.classList.add('active');
-          answer.style.maxHeight = (answer.scrollHeight + 40) + 'px';
-        }
-      });
+    if (!isActive && answer) {
+      item.classList.add('active');
+      answer.style.maxHeight = (answer.scrollHeight + 50) + 'px';
     }
+  };
+
+  const faqQuestions = document.querySelectorAll('.faq-question');
+  faqQuestions.forEach(question => {
+    question.addEventListener('click', function(e) {
+      e.preventDefault();
+      window.toggleFaqItem(this);
+    });
   });
 
   // ==========================================

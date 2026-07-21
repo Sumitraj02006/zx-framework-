@@ -1761,7 +1761,12 @@ header.mobile-active .mobile-toggle-line:nth-child(3) {
 .faq-answer {
   max-height: 0;
   overflow: hidden;
-  transition: max-height var(--transition-normal) ease-out;
+  transition: max-height var(--transition-normal) ease-out, opacity var(--transition-normal);
+  opacity: 0;
+}
+.faq-item.active .faq-answer {
+  max-height: 1000px;
+  opacity: 1;
 }
 .faq-answer-content {
   padding: 0 24px 20px 24px;
