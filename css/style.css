@@ -2609,5 +2609,33 @@ textarea:focus-visible {
   }
 }
 
+/* --- ULTRA-WIDE & 4K DISPLAY ENHANCEMENTS (2000px+) --- */
+@media (min-width: 2000px) {
+  .container {
+    max-width: 1600px;
+  }
+  .hero-content h1 {
+    font-size: clamp(3.5rem, 5vw, 5.5rem);
+  }
+  .section-header h2 {
+    font-size: clamp(2.5rem, 3.5vw, 4rem);
+  }
+}
 
-
+/* --- SMALL MOBILE SAFETY OVERFLOW FIX (<= 340px) --- */
+@media (max-width: 340px) {
+  .container {
+    padding: 0 12px;
+  }
+  .hero-btns {
+    flex-direction: column;
+    width: 100%;
+  }
+  .hero-btns .btn {
+    width: 100%;
+    text-align: center;
+  }
+  .trust-stats {
+    grid-template-columns: 1fr;
+  }
+}
