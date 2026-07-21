@@ -85,6 +85,9 @@ body.dark-theme {
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
 }
 
 body {
@@ -95,6 +98,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
+  position: relative;
   transition: background-color var(--transition-normal), color var(--transition-normal);
 }
 
@@ -103,6 +109,8 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--text-primary);
   font-weight: 700;
   line-height: 1.25;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 a {
@@ -2429,6 +2437,10 @@ footer {
   .testimonial-slide {
     flex: 0 0 100%;
   }
+  .footer-grid {
+    grid-template-columns: 1fr !important;
+    gap: 40px !important;
+  }
 }
 
 /* Dynamic Mobile Menu CSS */
@@ -2582,15 +2594,24 @@ textarea:focus-visible {
   outline-offset: 4px;
 }
 
-/* --- CHATBOX MOBILE STRETCH --- */
-@media (max-width: 400px) {
+/* --- CHATBOX & WIDGET MOBILE SEPARATION --- */
+@media (max-width: 768px) {
+  #back-to-top {
+    bottom: 20px;
+    right: 16px;
+    left: auto;
+    z-index: 998;
+  }
   .live-chat-widget {
-    left: 12px;
-    right: 12px;
+    bottom: 20px;
+    left: 16px;
+    right: auto;
+    z-index: 999;
   }
   .chat-box {
-    width: calc(100vw - 24px);
     left: 0;
+    width: min(320px, calc(100vw - 32px));
+    max-width: calc(100vw - 32px);
   }
 }
 
