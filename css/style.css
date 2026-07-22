@@ -328,8 +328,6 @@ header.scrolled {
   background: var(--glass-bg);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border-bottom: 1px solid var(--glass-border);
-  box-shadow: var(--shadow-md);
   padding: 10px 0;
 }
 header:not(.scrolled) {
