@@ -2825,3 +2825,15 @@ textarea:focus-visible {
     padding: 16px;
   }
 }
+
+/* --- COLLAPSIBLE SKILLS DROPDOWN --- */
+details.skills-dropdown[open] summary i {
+  transform: rotate(180deg);
+  color: var(--primary) !important;
+}
+details.skills-dropdown summary::-webkit-details-marker {
+  display: none;
+}
+details.skills-dropdown summary {
+  outline: none;
+}
