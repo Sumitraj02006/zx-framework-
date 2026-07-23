@@ -844,25 +844,29 @@ document.addEventListener('DOMContentLoaded', () => {
     return valid;
   };
 
-  nextStepBtns.forEach(btn => {
-    btn.addEventListener('click', (e) => {
+  // Event delegation for Wizard next step button
+  document.addEventListener('click', (e) => {
+    const nextBtn = e.target.closest('.wizard-next');
+    if (nextBtn) {
       e.preventDefault();
-      console.log('[Wizard] Next button clicked. Current step:', currentStep);
+      console.log('[Wizard Delegation] Next button clicked. Current step:', currentStep);
       if (validateStep(currentStep)) {
         currentStep++;
-        console.log('[Wizard] Moving to step:', currentStep);
+        console.log('[Wizard Delegation] Moving to step:', currentStep);
         updateWizard();
       }
-    });
+    }
   });
 
-  prevStepBtns.forEach(btn => {
-    btn.addEventListener('click', (e) => {
+  // Event delegation for Wizard previous step button
+  document.addEventListener('click', (e) => {
+    const prevBtn = e.target.closest('.wizard-prev');
+    if (prevBtn) {
       e.preventDefault();
       currentStep--;
-      console.log('[Wizard] Back button clicked. Moving to step:', currentStep);
+      console.log('[Wizard Delegation] Back button clicked. Moving to step:', currentStep);
       updateWizard();
-    });
+    }
   });
 
   if (wizardForm) {
