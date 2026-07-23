@@ -510,7 +510,7 @@
 
                 <div class="wizard-actions">
                   <div></div>
-                  <button type="button" class="btn btn-primary wizard-next">Next Step <i class="fas fa-arrow-right"></i></button>
+                  <button type="button" class="btn btn-primary wizard-next" onclick="window.goNextStep(event)">Next Step <i class="fas fa-arrow-right"></i></button>
                 </div>
               </div>
 
@@ -529,8 +529,8 @@
                 </div>
 
                 <div class="wizard-actions">
-                  <button type="button" class="btn btn-secondary wizard-prev"><i class="fas fa-arrow-left"></i> Back</button>
-                  <button type="button" class="btn btn-primary wizard-next">Next Step <i class="fas fa-arrow-right"></i></button>
+                  <button type="button" class="btn btn-secondary wizard-prev" onclick="window.goPrevStep(event)"><i class="fas fa-arrow-left"></i> Back</button>
+                  <button type="button" class="btn btn-primary wizard-next" onclick="window.goNextStep(event)">Next Step <i class="fas fa-arrow-right"></i></button>
                 </div>
               </div>
 
@@ -554,7 +554,7 @@
                 </div>
 
                 <div class="wizard-actions">
-                  <button type="button" class="btn btn-secondary wizard-prev"><i class="fas fa-arrow-left"></i> Back</button>
+                  <button type="button" class="btn btn-secondary wizard-prev" onclick="window.goPrevStep(event)"><i class="fas fa-arrow-left"></i> Back</button>
                   <button type="submit" class="btn btn-accent">Request Free Quote <i class="fas fa-paper-plane"></i></button>
                 </div>
               </div>
@@ -715,6 +715,6 @@
   </div>
 
   <!-- Core JavaScript -->
-  <script src="js/app.js?v=2"></script>
+  <script src="js/app.js?v=3"></script>
 </body>
 </html>

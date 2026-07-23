@@ -844,30 +844,24 @@ document.addEventListener('DOMContentLoaded', () => {
     return valid;
   };
 
-  // Event delegation for Wizard next step button
-  document.addEventListener('click', (e) => {
-    const nextBtn = e.target.closest('.wizard-next');
-    if (nextBtn) {
-      e.preventDefault();
-      console.log('[Wizard Delegation] Next button clicked. Current step:', currentStep);
-      if (validateStep(currentStep)) {
-        currentStep++;
-        console.log('[Wizard Delegation] Moving to step:', currentStep);
-        updateWizard();
-      }
-    }
-  });
-
-  // Event delegation for Wizard previous step button
-  document.addEventListener('click', (e) => {
-    const prevBtn = e.target.closest('.wizard-prev');
-    if (prevBtn) {
-      e.preventDefault();
-      currentStep--;
-      console.log('[Wizard Delegation] Back button clicked. Moving to step:', currentStep);
+  // Expose global navigation functions for inline onclick handlers to bypass bubbling stops
+  window.goNextStep = function(event) {
+    if (event) event.preventDefault();
+    console.log('[Global] goNextStep called. Current Step:', currentStep);
+    if (validateStep(currentStep)) {
+      currentStep++;
+      console.log('[Global] Moving to Step:', currentStep);
       updateWizard();
     }
-  });
+  };
+
+  window.goPrevStep = function(event) {
+    if (event) event.preventDefault();
+    console.log('[Global] goPrevStep called. Current Step:', currentStep);
+    currentStep--;
+    console.log('[Global] Moving to Step:', currentStep);
+    updateWizard();
+  };
 
   if (wizardForm) {
     wizardForm.addEventListener('submit', (e) => {
