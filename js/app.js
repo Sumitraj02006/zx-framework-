@@ -1,4 +1,9 @@
 // ==========================================
+// GLOBAL CONFIGURATION (GOOGLE SHEETS INTEGRATION)
+// ==========================================
+window.GOOGLE_SHEETS_URL = 'YOUR_GOOGLE_APPS_SCRIPT_URL_HERE';
+
+// ==========================================
 // GLOBAL BLOG ARTICLE MODAL CONTROLLER
 // ==========================================
 window.openBlogArticleModal = function(articleId) {
@@ -853,8 +858,20 @@ document.addEventListener('DOMContentLoaded', () => {
       if (validateStep(currentStep)) {
         // Collect form data
         const formData = new FormData(wizardForm);
-        const name = formData.get('quote-name');
+        formData.append('form_type', 'quotes');
+        const name = formData.get('quote-name') || 'Guest';
         
+        // If Google Sheet Web App URL is configured, submit the data
+        if (window.GOOGLE_SHEETS_URL && window.GOOGLE_SHEETS_URL !== 'YOUR_GOOGLE_APPS_SCRIPT_URL_HERE') {
+          fetch(window.GOOGLE_SHEETS_URL, {
+            method: 'POST',
+            body: formData
+          })
+          .then(res => res.json())
+          .then(data => console.log('Quote saved to Google Sheets:', data))
+          .catch(err => console.error('Sheet save failed:', err));
+        }
+
         // Show success animation or modal
         alert(`Thank you, ${name}! Your free website quote request has been received. Our team will contact you within 24 hours.`);
         
@@ -863,6 +880,40 @@ document.addEventListener('DOMContentLoaded', () => {
         currentStep = 1;
         updateWizard();
       }
+    });
+  }
+
+  // Zoryvex Lounge Community Application Form handler
+  const communityForm = document.getElementById('community-join-form');
+  if (communityForm) {
+    communityForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const formData = new FormData(communityForm);
+      formData.append('form_type', 'community');
+      
+      // Gather all selected skills checkbox values
+      const selectedSkills = [];
+      const skillCheckboxes = communityForm.querySelectorAll('input[name="skills"]:checked');
+      skillCheckboxes.forEach(cb => selectedSkills.push(cb.value));
+      
+      // Remove original parameters and replace with array entries for Apps Script parameters mapping
+      formData.delete('skills');
+      selectedSkills.forEach(skill => formData.append('skills', skill));
+
+      const name = formData.get('name') || 'Applicant';
+
+      if (window.GOOGLE_SHEETS_URL && window.GOOGLE_SHEETS_URL !== 'YOUR_GOOGLE_APPS_SCRIPT_URL_HERE') {
+        fetch(window.GOOGLE_SHEETS_URL, {
+          method: 'POST',
+          body: formData
+        })
+        .then(res => res.json())
+        .then(data => console.log('Community application saved to Google Sheets:', data))
+        .catch(err => console.error('Sheet save failed:', err));
+      }
+
+      alert(`Thank you, ${name}! Your community application has been successfully submitted. Please make sure to join the WhatsApp Group!`);
+      communityForm.reset();
     });
   }
 
