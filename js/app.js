@@ -877,10 +877,10 @@ document.addEventListener('DOMContentLoaded', () => {
         if (window.GOOGLE_SHEETS_URL && window.GOOGLE_SHEETS_URL !== 'YOUR_GOOGLE_APPS_SCRIPT_URL_HERE') {
           fetch(window.GOOGLE_SHEETS_URL, {
             method: 'POST',
-            body: formData
+            mode: 'no-cors',
+            body: new URLSearchParams(formData)
           })
-          .then(res => res.json())
-          .then(data => console.log('Quote saved to Google Sheets:', data))
+          .then(() => console.log('Quote submission sent to Google Sheets.'))
           .catch(err => console.error('Sheet save failed:', err));
         }
 
@@ -917,10 +917,10 @@ document.addEventListener('DOMContentLoaded', () => {
       if (window.GOOGLE_SHEETS_URL && window.GOOGLE_SHEETS_URL !== 'YOUR_GOOGLE_APPS_SCRIPT_URL_HERE') {
         fetch(window.GOOGLE_SHEETS_URL, {
           method: 'POST',
-          body: formData
+          mode: 'no-cors',
+          body: new URLSearchParams(formData)
         })
-        .then(res => res.json())
-        .then(data => console.log('Community application saved to Google Sheets:', data))
+        .then(() => console.log('Community submission sent to Google Sheets.'))
         .catch(err => console.error('Sheet save failed:', err));
       }
 
