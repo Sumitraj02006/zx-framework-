@@ -818,12 +818,20 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   const validateStep = (step) => {
+    console.log(`[Wizard] Validating step ${step}...`);
     const currentPane = document.querySelector(`.wizard-step-pane[data-step="${step}"]`);
+    if (!currentPane) {
+      console.warn(`[Wizard] Pane not found for step ${step}`);
+      return false;
+    }
+    
     const inputs = currentPane.querySelectorAll('input[required], select[required], textarea[required]');
     let valid = true;
 
     inputs.forEach(input => {
-      if (!input.value.trim()) {
+      const val = input.value ? input.value.trim() : '';
+      console.log(`[Wizard] Field: ${input.name || input.id} | Value: "${val}"`);
+      if (!val) {
         valid = false;
         input.style.borderColor = 'red';
         input.addEventListener('input', () => {
@@ -832,21 +840,27 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
+    console.log(`[Wizard] Step ${step} validation result: ${valid}`);
     return valid;
   };
 
   nextStepBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      console.log('[Wizard] Next button clicked. Current step:', currentStep);
       if (validateStep(currentStep)) {
         currentStep++;
+        console.log('[Wizard] Moving to step:', currentStep);
         updateWizard();
       }
     });
   });
 
   prevStepBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
       currentStep--;
+      console.log('[Wizard] Back button clicked. Moving to step:', currentStep);
       updateWizard();
     });
   });
