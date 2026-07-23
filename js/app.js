@@ -1,7 +1,7 @@
 // ==========================================
 // GLOBAL CONFIGURATION (GOOGLE SHEETS INTEGRATION)
 // ==========================================
-window.GOOGLE_SHEETS_URL = 'YOUR_GOOGLE_APPS_SCRIPT_URL_HERE';
+window.GOOGLE_SHEETS_URL = 'https://script.google.com/macros/s/AKfycbyVurvWtmYzersXa5NgqqbZgMMrZu9rIlt3FroQ4D4S_uQD0fQhkMu9jybFJV98teN1Og/exec';
 
 // ==========================================
 // GLOBAL BLOG ARTICLE MODAL CONTROLLER
