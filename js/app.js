@@ -579,7 +579,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.style.overflow = 'auto';
   };
 
-  if (modalClose) {
+  if (modal && modalClose) {
     modalClose.addEventListener('click', closeModal);
     modal.addEventListener('click', (e) => {
       if (e.target === modal) closeModal();
